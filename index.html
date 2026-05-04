@@ -9,7 +9,47 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#FDFCF8;font-family:'DM Sans',system-ui,sans-serif;color:#1A1A2E;min-height:100vh}
 .wrap{max-width:980px;margin:0 auto;padding:3.5rem 2rem 5rem}
-.top-bar{height:4px;background:linear-gradient(90deg,#EF9F27 0%,#F5C4B3 60%,#B5D4F4 100%);border-radius:4px;margin-bottom:3rem}
+.top-bar{height:4px;background:linear-gradient(90deg,#EF9F27 0%,#F5C4B3 60%,#B5D4F4 100%);border-radius:4px;margin-bottom:2rem}
+.listen-cta{display:flex;align-items:center;justify-content:space-between;background:#1A1A2E;border-radius:18px;padding:1.6rem 2rem;margin-bottom:2.5rem;text-decoration:none;color:#fff;position:relative;overflow:hidden;transition:transform .18s,box-shadow .18s;cursor:pointer}
+.listen-cta::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(239,159,39,.18) 0%,transparent 55%,rgba(181,212,244,.12) 100%);pointer-events:none}
+.listen-cta:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(26,26,46,.22)}
+.listen-cta:active{transform:translateY(0)}
+.lc-left{flex:1;min-width:0}
+.lc-badge{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#EF9F27;font-weight:600;margin-bottom:.5rem}
+.lc-title{font-size:21px;font-weight:500;line-height:1.25;color:#fff;margin-bottom:.45rem}
+.lc-sub{font-size:13px;color:rgba(255,255,255,.5);line-height:1.6}
+.lc-arrow{font-size:12px;color:#EF9F27;font-weight:500;margin-top:.75rem;display:inline-flex;align-items:center;gap:5px}
+.lc-play{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#EF9F27,#F5C4B3);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;margin-left:1.5rem;box-shadow:0 4px 18px rgba(239,159,39,.35);transition:transform .18s}
+.listen-cta:hover .lc-play{transform:scale(1.08)}
+.lc-waves{display:flex;align-items:center;gap:3px;margin-left:1.5rem;margin-right:.5rem}
+.lc-wave{width:3px;border-radius:3px;background:rgba(255,255,255,.2)}
+.lc-wave:nth-child(1){height:12px}.lc-wave:nth-child(2){height:20px}.lc-wave:nth-child(3){height:28px}.lc-wave:nth-child(4){height:18px}.lc-wave:nth-child(5){height:24px}.lc-wave:nth-child(6){height:14px}.lc-wave:nth-child(7){height:22px}
+.doc-header{margin-bottom:2.5rem}
+.doc-kicker{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#EF9F27;font-weight:600;margin-bottom:.6rem}
+.doc-title{font-size:34px;font-weight:600;letter-spacing:-.5px;color:#1A1A2E;line-height:1.12;margin-bottom:.5rem}
+.doc-title span{color:#EF9F27}
+.doc-desc{font-size:14.5px;color:#666;line-height:1.75;margin-bottom:1.75rem}
+.start-btn{display:inline-flex;align-items:center;gap:7px;background:#1A7A3C;color:#fff;font-size:11px;font-weight:600;letter-spacing:.06em;padding:6px 14px 6px 10px;border-radius:100px;margin-bottom:.9rem;text-decoration:none;transition:background .15s;cursor:default}
+.start-btn:hover{background:#166032}
+.start-dot{width:7px;height:7px;border-radius:50%;background:#6EE89A}
+.tapin-pill{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,#FDE8F5,#F9E4FF);border:1px solid #E2AED4;color:#7A1F56;font-size:11px;font-weight:600;letter-spacing:.05em;padding:5px 14px;border-radius:100px;margin-bottom:.85rem}
+.home-pill{display:inline-flex;align-items:center;gap:6px;background:#EFF6F2;border:1px solid #B4D4C4;color:#255C3F;font-size:11px;font-weight:600;letter-spacing:.05em;padding:5px 14px;border-radius:100px;margin-bottom:.85rem}
+.doc-rule{border:none;border-top:1px solid #ede8e0;margin-bottom:1.75rem}
+.tldr-wrap{background:#fff;border:1px solid #ede8e0;border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:1.5rem;display:grid;grid-template-columns:auto 1fr;gap:0 1.4rem}
+.tldr-label{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#bbb;font-weight:600;padding-top:3px;white-space:nowrap}
+.tldr-items{list-style:none}
+.tldr-items li{font-size:13.5px;color:#333;line-height:1.7;padding:3px 0;border-bottom:1px solid #f5f1eb}
+.tldr-items li:last-child{border-bottom:none}
+.tldr-items li strong{color:#1A1A2E;font-weight:500}
+.toc-wrap{display:grid;grid-template-columns:1fr 1fr;gap:4px 20px}
+.toc-item{display:flex;align-items:baseline;gap:8px;padding:5px 0;text-decoration:none;color:#555;font-size:13px;border-bottom:1px solid #f5f1eb;transition:color .12s;cursor:pointer}
+.toc-item:hover{color:#EF9F27}
+.toc-num{font-size:10px;color:#ddd;font-weight:600;flex-shrink:0;min-width:18px}
+.toc-name{flex:1}
+.toc-tag{font-size:10px;padding:2px 8px;border-radius:20px;background:#FAEEDA;color:#633806;font-weight:500;flex-shrink:0;white-space:nowrap}
+.toc-tag.active{background:#E8F5E8;color:#2D7A2D}
+.toc-tag.flight{background:#EEF5FF;color:#1A5FA8}
+@media(max-width:640px){.toc-wrap{grid-template-columns:1fr}.tldr-wrap{grid-template-columns:1fr;gap:.5rem}}
 .from-label{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#EF9F27;font-weight:500;margin-bottom:.5rem}
 .letter-box{background:#fff;border:1px solid #ede8e0;border-left:3px solid #EF9F27;border-radius:14px;padding:1.4rem 1.65rem 1.25rem;margin-bottom:2.25rem;font-size:13.5px;line-height:1.9;color:#444}
 .letter-sig{font-size:12.5px;color:#888;margin-top:.85rem;padding-top:.75rem;border-top:1px solid #f0ebe3}
@@ -182,14 +222,85 @@ body{background:#FDFCF8;font-family:'DM Sans',system-ui,sans-serif;color:#1A1A2E
 <div class="wrap">
 <div class="top-bar"></div>
 
+<!-- AUDIO CTA -->
+<a class="listen-cta" href="https://activecampaign-alicia.github.io/waterplan-audio/" target="_blank">
+  <div class="lc-left">
+    <div class="lc-badge">🎧 Audio version available</div>
+    <div class="lc-title">This report has a voice.</div>
+    <div class="lc-sub">Full narration · 15 chapters · choose your pace. Hear every number, every idea, and every next step — without scrolling a line.</div>
+    <div class="lc-arrow">Listen now &nbsp;→</div>
+  </div>
+  <div class="lc-waves">
+    <div class="lc-wave"></div><div class="lc-wave"></div><div class="lc-wave"></div>
+    <div class="lc-wave"></div><div class="lc-wave"></div><div class="lc-wave"></div>
+    <div class="lc-wave"></div>
+  </div>
+  <div class="lc-play">▶</div>
+</a>
+
+<!-- DOC HEADER -->
+<div class="doc-header">
+  <div class="doc-kicker">ActiveCampaign · Revenue Marketing · Q2 2026</div>
+  <h1 class="doc-title">Revenue Marketing <span>Intelligence</span></h1>
+  <p class="doc-desc">This is the living strategy document for our company goals and the immediate next steps we are actively working on — six projects multiplied by four impact metrics and nine big ideas, each one fueling the engine that connects every motion our team runs. It covers the AI capabilities redefining our competitive advantage, the team and weekly rhythm behind the execution, and the operating model that makes it all stick. One north star: growing high-quality leads that convert to trials, predictably, and at scale.</p>
+  <hr class="doc-rule">
+
+  <!-- TLDR -->
+  <div class="tldr-wrap">
+    <div class="tldr-label">TL;DR</div>
+    <div>
+      <p style="font-size:13.5px;color:#444;line-height:1.85;margin-bottom:.65rem">This is more than a project plan — it's the blueprint for how we bring everything we started in Chicago to life.</p>
+      <p style="font-size:13.5px;color:#444;line-height:1.85;margin-bottom:.65rem">We're building these next two years in waves: four of them, each with its own micro-launches between. Each release makes the next one more powerful. It's the same philosophy behind every product rollout that actually sticks — you don't drop everything at once. You build conviction, earn trust, and let the work compound.</p>
+      <p style="font-size:13.5px;color:#444;line-height:1.85;margin-bottom:.65rem">What you'll walk away with is a clear picture of where we are right now, real confidence in where we're heading, and — if I did this right — some of the same excitement I feel every time I sit down with this data. The opportunity is real. The momentum is real. And the most exciting ideas in here are the ones we haven't fully built yet.</p>
+      <p style="font-size:13px;color:#aaa;line-height:1.75;font-style:italic">We're onto something real. I'm ready to build it. &nbsp;— Alicia</p>
+    </div>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <p style="font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#bbb;font-weight:600;margin-bottom:.6rem">Navigation</p>
+  <div class="toc-wrap">
+    <div class="toc-item" onclick="document.querySelector('.narr').scrollIntoView({behavior:'smooth',block:'start'})">
+      <span class="toc-num">01</span><span class="toc-name">The mission + AI launches</span>
+    </div>
+    <div class="toc-item" onclick="document.querySelector('.impact-grid').scrollIntoView({behavior:'smooth',block:'start'})">
+      <span class="toc-num">02</span><span class="toc-name">Estimated impact</span>
+    </div>
+    <div class="toc-item" onclick="st('elt')">
+      <span class="toc-num">03</span><span class="toc-name">ELT weekly reporting</span><span class="toc-tag active">Active</span>
+    </div>
+    <div class="toc-item" onclick="st('camp')">
+      <span class="toc-num">04</span><span class="toc-name">Mailchimp switcher</span><span class="toc-tag flight">In flight</span>
+    </div>
+    <div class="toc-item" onclick="st('air')">
+      <span class="toc-num">05</span><span class="toc-name">Airtable integration</span><span class="toc-tag flight">In build</span>
+    </div>
+    <div class="toc-item" onclick="st('score')">
+      <span class="toc-num">06</span><span class="toc-name">Scoring framework</span><span class="toc-tag flight">In design</span>
+    </div>
+    <div class="toc-item" onclick="st('monks')">
+      <span class="toc-num">07</span><span class="toc-name">Monks SFTP</span><span class="toc-tag active">This week</span>
+    </div>
+    <div class="toc-item" onclick="st('big')">
+      <span class="toc-num">08</span><span class="toc-name">Big ideas</span>
+    </div>
+    <div class="toc-item" onclick="document.querySelector('.team-grid').scrollIntoView({behavior:'smooth',block:'start'})">
+      <span class="toc-num">09</span><span class="toc-name">Team + weekly rhythm</span>
+    </div>
+    <div class="toc-item" onclick="document.getElementById('fdx-anchor').scrollIntoView({behavior:'smooth',block:'start'})">
+      <span class="toc-num">10</span><span class="toc-name">Operating model (4DX)</span>
+    </div>
+  </div>
+</div>
+
 <!-- LETTER -->
 <div class="from-label">Quick note from Alicia</div>
 <div class="letter-box">
   As a takeaway from our on-site last week, I built this framework. The biggest takeaway is that I genuinely feel we are building something extraordinary over the next couple of years. In addition to a path towards hitting our trial numbers, we have the opportunity to build a sustainable system that helps us tie every number we report sync with the many motions we have in place — allowing us to connect every initiative to real outcomes while we launch Water and the soon-to-come Sun. What follows is my best thinking on how we get there together.
-  <div class="letter-sig">— Alicia · <em>Q2 2026</em></div>
+  <div class="letter-sig"><em>Q2 2026</em></div>
 </div>
 
 <!-- HERO -->
+<div class="start-btn"><span class="start-dot"></span> Start here</div>
 <div class="eyebrow">Revenue Marketing Intelligence · ActiveCampaign · Q2 2026</div>
 <h1 class="hero-title">Every ambitious business wants to grow without drowning in complexity. They want a system that thinks ahead, moves with them, and makes their team extraordinary. That's what we are building.</h1>
 <p class="hero-sub">ActiveCampaign is the leader in marketing AI automation — and the businesses that choose us don't just get software. They get a strategic advantage that makes their people more powerful, their campaigns smarter, and their growth more predictable.</p>
@@ -252,6 +363,7 @@ body{background:#FDFCF8;font-family:'DM Sans',system-ui,sans-serif;color:#1A1A2E
 <hr class="div">
 
 <!-- PRIORITY CARDS -->
+<div class="tapin-pill">✦ Where it gets tactical</div>
 <div class="priorities-label">Six projects, one system — click to explore</div>
 <div class="p-grid">
   <div class="pc on" id="pc-elt" onclick="st('elt')"><div class="pc-num">Priority 1</div><div class="pc-name">ELT weekly reporting</div><span class="pc-badge">Active</span></div>
@@ -577,6 +689,8 @@ body{background:#FDFCF8;font-family:'DM Sans',system-ui,sans-serif;color:#1A1A2E
 <hr class="div">
 
 <!-- 4DX — BOTTOM CAPSTONE -->
+<div id="fdx-anchor"></div>
+<div class="home-pill">→ Bring it home</div>
 <div class="fdx-eyebrow">Strategic recommendation — how we execute all of it</div>
 <div class="fdx-bottom">
   <div class="fdx-title">Slow down to speed up — the operating model that makes it stick</div>
@@ -620,7 +734,7 @@ body{background:#FDFCF8;font-family:'DM Sans',system-ui,sans-serif;color:#1A1A2E
         <div class="week-pill"><div class="week-pill-n">Week 3</div><div class="week-pill-v">Claude</div></div>
         <div class="week-pill"><div class="week-pill-n">Week 4</div><div class="week-pill-v">Flex</div></div>
       </div>
-      <a href="https://www.linkedin.com/in/alicia-martin-tx/" target="_blank" class="alicia-link">📝 Read notes the team left me ↗</a>
+      <a href="https://www.linkedin.com/in/alicia-martin-tx/" target="_blank" class="alicia-link">📝 Read letters the team left me ↗</a>
     </div>
   </div>
 </div>
