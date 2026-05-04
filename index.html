@@ -4,413 +4,710 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Revenue Marketing Intelligence · ActiveCampaign Q2 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#FEFCF8;font-family:'DM Sans',system-ui,sans-serif;color:#1A1A2E;min-height:100vh}
-.container{max-width:960px;margin:0 auto;padding:3rem 2rem 4rem}
-.amber-bar{height:3px;background:#EF9F27;border-radius:2px;margin-bottom:2.75rem}
-.letter{background:#fff;border:1px solid #eee;border-left:3px solid #EF9F27;border-radius:12px;padding:1.25rem 1.5rem;margin-bottom:2rem;font-size:13.5px;line-height:1.85;color:#444}
-.letter-name{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#EF9F27;margin-bottom:.5rem;font-weight:500}
-.eyebrow{font-size:11px;letter-spacing:.12em;color:#888;text-transform:uppercase;margin-bottom:.6rem}
-.h1{font-size:29px;font-weight:500;line-height:1.25;color:#1A1A2E;margin-bottom:.75rem}
-.sub{font-size:15px;color:#555;line-height:1.75;margin-bottom:1.85rem}
-.narr{font-size:14px;line-height:1.95;color:#2a2a3a}
+body{background:#FDFCF8;font-family:'DM Sans',system-ui,sans-serif;color:#1A1A2E;min-height:100vh}
+.wrap{max-width:980px;margin:0 auto;padding:3.5rem 2rem 5rem}
+.top-bar{height:4px;background:linear-gradient(90deg,#EF9F27 0%,#F5C4B3 60%,#B5D4F4 100%);border-radius:4px;margin-bottom:3rem}
+.from-label{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#EF9F27;font-weight:500;margin-bottom:.5rem}
+.letter-box{background:#fff;border:1px solid #ede8e0;border-left:3px solid #EF9F27;border-radius:14px;padding:1.4rem 1.65rem 1.25rem;margin-bottom:2.25rem;font-size:13.5px;line-height:1.9;color:#444}
+.letter-sig{font-size:12.5px;color:#888;margin-top:.85rem;padding-top:.75rem;border-top:1px solid #f0ebe3}
+.eyebrow{font-size:11px;letter-spacing:.13em;color:#aaa;text-transform:uppercase;margin-bottom:.65rem}
+.hero-title{font-size:30px;font-weight:500;line-height:1.22;color:#1A1A2E;margin-bottom:.85rem}
+.hero-sub{font-size:15.5px;color:#555;line-height:1.8;margin-bottom:1.5rem}
+.narr{font-size:14px;line-height:2;color:#333}
 .narr p{margin-bottom:.9rem}.narr p:last-child{margin-bottom:0}
-.wave-callout{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:1.5rem 0}
-.wave-card{border-radius:12px;padding:1rem 1.25rem;border:1px solid #eee}
-.wave-amber{background:#FEFBF5;border-color:#F5C4B3}
-.wave-blue{background:#F5F9FF;border-color:#B5D4F4}
-.wave-badge{font-size:10px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
-.wave-amber .wave-badge{color:#633806}
-.wave-blue .wave-badge{color:#0C447C}
-.wave-title{font-size:14px;font-weight:500;color:#1A1A2E;margin-bottom:5px}
-.wave-desc{font-size:12.5px;color:#555;line-height:1.65}
-.div{border:none;border-top:1px solid #eee;margin:2.25rem 0}
-.sh{font-size:15px;font-weight:500;color:#1A1A2E;margin-bottom:1.1rem}
+.ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:1.75rem 0}
+.ai-card{border-radius:14px;padding:1.15rem 1.4rem;border:1px solid transparent}
+.ai-amber{background:#FEFBF5;border-color:#F0C4A0}
+.ai-blue{background:#F4F8FF;border-color:#B0CCEE}
+.ai-eyebrow{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px}
+.ai-amber .ai-eyebrow{color:#7A3C0A}
+.ai-blue .ai-eyebrow{color:#0E4A80}
+.ai-title{font-size:14.5px;font-weight:500;color:#1A1A2E;margin-bottom:.45rem;line-height:1.3}
+.ai-body{font-size:12.5px;color:#555;line-height:1.7}
+.ai-tag{display:inline-block;font-size:10px;font-weight:500;margin-top:.6rem;padding:2px 10px;border-radius:20px}
+.ai-amber .ai-tag{background:#FAEEDA;color:#633806}
+.ai-blue .ai-tag{background:#DEEEFF;color:#0E4A80}
+.ai-comp-note{font-size:11.5px;color:#0E4A80;line-height:1.6;margin-top:.75rem;padding:.6rem .85rem;background:#EEF5FF;border-radius:8px;border-left:2px solid #B0CCEE}
+.ai-banner{background:#EEF5FF;border:1px solid #B0CCEE;border-left:3px solid #0E4A80;border-radius:12px;padding:.85rem 1.15rem;margin-bottom:1.1rem;font-size:12px;color:#0E4A80;line-height:1.65}
+.div{border:none;border-top:1px solid #eee;margin:2.5rem 0}
+.sh{font-size:16px;font-weight:500;color:#1A1A2E;margin-bottom:1.15rem}
 .sh-sm{font-size:13px;font-weight:500;color:#1A1A2E;margin-bottom:.75rem}
-.fdx-label{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#EF9F27;margin-bottom:.5rem;font-weight:500}
-.fdx-rec{background:#FAFAF5;border:1px solid #eee;border-radius:14px;padding:1.35rem 1.6rem;margin-bottom:1rem}
-.fdx-title{font-size:16px;font-weight:500;color:#1A1A2E;margin-bottom:.6rem}
-.fdx-sub{font-size:13px;color:#666;line-height:1.7;margin-bottom:1rem}
-.fdx-g{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.fdx-col{padding-left:.9rem;border-left:2px solid #EF9F27}
-.fdx-col-n{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#aaa;margin-bottom:3px}
-.fdx-col-v{font-size:13px;font-weight:500;color:#1A1A2E;line-height:1.4}
-.fdx-team{margin-top:1rem;font-size:12px;color:#888;line-height:1.7;border-top:1px solid #eee;padding-top:.85rem}
-.pgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin-bottom:.5rem}
-.pc{background:#fff;border:1px solid #e8e8e8;border-radius:10px;padding:.8rem .65rem;text-align:center;cursor:pointer;transition:border-color .15s}
-.pc:hover{border-color:#ccc}.pc.on{border:1.5px solid #EF9F27;background:#FFFDF7}
-.pn{font-size:10px;color:#999;margin-bottom:3px}
-.pt{font-size:12px;font-weight:500;color:#1A1A2E;line-height:1.3}
-.ps{display:inline-block;font-size:10px;margin-top:5px;padding:2px 8px;border-radius:20px;background:#FAEEDA;color:#633806}
-.tabs{display:flex;border-bottom:1px solid #eee;margin-bottom:1.85rem;overflow-x:auto;gap:2px}
-.tb{font-size:13px;font-weight:500;color:#888;background:transparent;border:none;border-bottom:2.5px solid transparent;padding:9px 16px;cursor:pointer;white-space:nowrap;margin-bottom:-1px;transition:color .15s}
-.tb:hover{color:#1A1A2E}.tb.on{color:#1A1A2E;border-bottom-color:#EF9F27}
+.section-lead{font-size:13.5px;color:#666;line-height:1.75;margin-bottom:1.35rem}
+.impact-note{font-size:12.5px;color:#999;line-height:1.75;margin-bottom:1.25rem;font-style:italic}
+.impact-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.imp-card{background:#fff;border:1px solid #e8e3da;border-radius:14px;padding:1.2rem 1.35rem}
+.imp-num{font-size:28px;font-weight:500;color:#EF9F27;margin-bottom:.35rem;line-height:1}
+.imp-title{font-size:13.5px;font-weight:500;color:#1A1A2E;margin-bottom:.5rem}
+.imp-body{font-size:13px;color:#555;line-height:1.7;margin-bottom:.6rem}
+.imp-source{font-size:11px;color:#bbb;border-top:1px solid #f2f0eb;padding-top:.5rem;line-height:1.55}
+.imp-source em{color:#27AE60;font-style:normal;font-weight:500}
+.priorities-label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#aaa;margin-bottom:.75rem}
+.p-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:9px;margin-bottom:.6rem}
+.pc{background:#fff;border:1.5px solid #e8e3da;border-radius:12px;padding:.8rem .6rem;text-align:center;cursor:pointer;transition:all .15s}
+.pc:hover{border-color:#ccc;transform:translateY(-1px)}
+.pc.on{border-color:#EF9F27;background:#FFFDF7;box-shadow:0 2px 12px rgba(239,159,39,.12)}
+.pc-num{font-size:10px;color:#bbb;margin-bottom:3px;font-weight:500}
+.pc-name{font-size:11.5px;font-weight:500;color:#1A1A2E;line-height:1.3}
+.pc-badge{display:inline-block;font-size:10px;margin-top:5px;padding:2px 9px;border-radius:20px;background:#FAEEDA;color:#633806}
+.tabs-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:.5rem}
+.tabs{display:flex;border-bottom:1px solid #e8e3da;margin-bottom:2rem;overflow-x:auto;gap:2px}
+.tb{font-size:12.5px;font-weight:500;color:#999;background:transparent;border:none;border-bottom:2.5px solid transparent;padding:9px 15px;cursor:pointer;white-space:nowrap;margin-bottom:-1px;transition:color .15s;font-family:'DM Sans',system-ui,sans-serif}
+.tb:hover{color:#333}.tb.on{color:#1A1A2E;border-bottom-color:#EF9F27}
 .ip{display:none}.ip.on{display:block}
-.ibadge{display:inline-block;font-size:11px;font-weight:500;padding:4px 12px;border-radius:20px;background:#FAEEDA;color:#633806;margin-bottom:10px}
-.it{font-size:22px;font-weight:500;color:#1A1A2E;margin-bottom:.55rem}
-.is{font-size:14px;color:#666;line-height:1.65;margin-bottom:1.6rem}
-.cg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:1.35rem}
-.cc{background:#fff;border:1px solid #e8e8e8;border-radius:14px;padding:1.1rem 1.25rem}
-.cl{font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#999;margin-bottom:8px}
-.cb{font-size:13px;color:#2a2a3a;line-height:1.75}
-.cb ul{list-style:none;padding:0}
-.cb li{padding:3px 0;border-bottom:1px solid #f0f0f0;font-size:13px}
-.cb li:last-child{border-bottom:none}.cb li::before{content:"→ ";color:#bbb}
-.fg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:1.35rem}
-.fc{background:#fff;border:1px solid #e8e8e8;border-radius:14px;padding:1.1rem 1.25rem}
-.ff{width:100%;min-height:72px;font-size:12.5px;color:#999;font-style:italic;outline:none;border:1px dashed #ddd;border-radius:8px;padding:8px 10px;background:#FAFAFA;resize:vertical;font-family:'DM Sans',system-ui,sans-serif;transition:border-color .15s}
-.ff:focus{border-style:solid;border-color:#EF9F27;font-style:normal;color:#1A1A2E;background:#fff}
-.ff.has-content{font-style:normal;color:#1A1A2E;background:#fff;border-color:#e8e8e8}
-.cite{font-size:11px;color:#185FA5;text-decoration:none;border-bottom:1px solid #B5D4F4}
+.export-btn{font-size:12px;color:#999;background:#fff;border:1px solid #e8e3da;border-radius:9px;padding:5px 14px;cursor:pointer;font-family:'DM Sans',system-ui,sans-serif;transition:all .15s;white-space:nowrap}
+.export-btn:hover{background:#f5f2ec;color:#1A1A2E;border-color:#ccc}
+.save-status{font-size:11px;color:#ccc;font-style:italic}
+.i-badge{display:inline-block;font-size:11px;font-weight:500;padding:4px 13px;border-radius:20px;background:#FAEEDA;color:#633806;margin-bottom:.85rem}
+.i-title{font-size:22px;font-weight:500;color:#1A1A2E;margin-bottom:.55rem;line-height:1.2}
+.i-sub{font-size:14px;color:#666;line-height:1.7;margin-bottom:1.6rem}
+.cards-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:1.25rem}
+.cards-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:1.25rem}
+.card{background:#fff;border:1px solid #e8e3da;border-radius:14px;padding:1.15rem 1.3rem}
+.card-label{font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#bbb;margin-bottom:9px;font-weight:500}
+.card-body{font-size:13px;color:#2a2a3a;line-height:1.8}
+.card-body ul{list-style:none;padding:0}
+.card-body li{padding:3.5px 0;border-bottom:1px solid #f2f0eb;font-size:13px;line-height:1.5}
+.card-body li:last-child{border-bottom:none}
+.card-body li::before{content:"→ ";color:#ccc}
+.cite{font-size:11px;color:#1A6FAA;text-decoration:none;border-bottom:1px solid #B5D4F4;line-height:1.9}
 .cite:hover{opacity:.75}
-.score-order{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:1.35rem}
-.so{background:#fff;border:1px solid #e8e8e8;border-radius:10px;padding:.85rem;text-align:center}
-.so-n{font-size:22px;font-weight:500;color:#EF9F27;line-height:1;margin-bottom:4px}
-.so-t{font-size:13px;font-weight:500;color:#1A1A2E;margin-bottom:3px}
-.so-o{font-size:11px;color:#888}
-.so-s{display:inline-block;font-size:10px;margin-top:5px;padding:2px 8px;border-radius:20px}
-.st-a{background:#EAF3DE;color:#27500A}.st-p{background:#FAEEDA;color:#633806}.st-n{background:#f0f0f0;color:#666}.st-t{background:#f0f0f0;color:#888}
-.wflow{display:flex;flex-direction:column;align-items:center;gap:7px;margin:1.25rem 0}
-.wf-top{font-size:12px;font-weight:500;background:#FAEEDA;color:#633806;padding:6px 20px;border-radius:20px}
-.wf-row{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;width:100%;align-items:center}
-.wf-box{background:#fff;border:1px solid #e8e8e8;border-radius:10px;padding:.7rem 1rem;font-size:12.5px;text-align:center;line-height:1.45}
-.wf-mid{font-size:11px;color:#aaa;text-align:center;line-height:1.4}
-.wf-arr{color:#ccc;text-align:center;font-size:18px;line-height:1}
-.wf-note{font-size:11.5px;color:#888;text-align:center;font-style:italic;margin-top:3px}
-.tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.tc{background:#fff;border:1px solid #e8e8e8;border-radius:14px;padding:1rem}
-.av{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500;margin-bottom:9px}
-.ab{background:#B5D4F4;color:#0C447C}.at{background:#9FE1CB;color:#085041}.ap{background:#CECBF6;color:#3C3489}.ac{background:#F5C4B3;color:#712B13}
-.tn{font-size:13px;font-weight:500;color:#1A1A2E;margin-bottom:2px}
-.tt{font-size:11px;color:#888;margin-bottom:7px}
-.td{font-size:11.5px;color:#666;line-height:1.55}
-.rg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:1.1rem}
-.rc{background:#fff;border:1px solid #e8e8e8;border-left:2.5px solid #EF9F27;border-radius:10px;padding:1.1rem 1.25rem}
-.rn{font-size:24px;font-weight:500;color:#EF9F27;line-height:1;margin-bottom:6px}
-.rt{font-size:13.5px;font-weight:500;color:#1A1A2E;margin-bottom:6px}
-.rb{font-size:13px;color:#555;line-height:1.65;margin-bottom:8px}
-.rd{font-size:12px;color:#666;border-top:1px solid #f0f0f0;padding-top:8px}
-.rd-lbl{font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:#aaa;margin-bottom:4px}
-.impact-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:1.1rem}
-.imp{background:#fff;border:1px solid #e8e8e8;border-radius:14px;padding:1.1rem 1.25rem}
-.imp-n{font-size:26px;font-weight:500;color:#EF9F27;margin-bottom:4px}
-.imp-t{font-size:13.5px;font-weight:500;color:#1A1A2E;margin-bottom:6px}
-.imp-b{font-size:13px;color:#555;line-height:1.65;margin-bottom:7px}
-.imp-src{font-size:11px;color:#999;border-top:1px solid #f0f0f0;padding-top:7px}
-.week-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:1.1rem}
-.day{background:#fff;border:1px solid #e8e8e8;border-radius:14px;padding:1rem .9rem}
-.day-name{font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:#999;margin-bottom:7px}
-.day-focus{font-size:13px;font-weight:500;color:#1A1A2E;margin-bottom:7px;line-height:1.3}
+.ff{width:100%;min-height:75px;font-size:12.5px;color:#aaa;font-style:italic;outline:none;border:1px dashed #ddd;border-radius:9px;padding:9px 11px;background:#FAFAF7;resize:vertical;font-family:'DM Sans',system-ui,sans-serif;transition:border-color .2s,background .2s}
+.ff:focus{border-style:solid;border-color:#EF9F27;font-style:normal;color:#1A1A2E;background:#fff}
+.ff.has-content{font-style:normal;color:#1A1A2E;background:#fff;border-color:#e8e3da;border-style:solid}
+.week-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:1rem}
+.day-card{background:#fff;border:1px solid #e8e3da;border-radius:14px;padding:1.05rem .95rem}
+.day-name{font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#bbb;margin-bottom:.55rem}
+.day-focus{font-size:13px;font-weight:500;color:#1A1A2E;margin-bottom:.6rem;line-height:1.3}
 .day-tasks{list-style:none;padding:0}
-.day-tasks li{font-size:11.5px;color:#666;padding:2.5px 0;border-bottom:1px solid #f5f5f5;line-height:1.45}
+.day-tasks li{font-size:11.5px;color:#666;padding:3px 0;border-bottom:1px solid #f5f2ee;line-height:1.45}
 .day-tasks li:last-child{border-bottom:none}
-.day-block{display:inline-block;font-size:10px;padding:2px 8px;border-radius:20px;margin-top:6px}
-.db-amber{background:#FAEEDA;color:#633806}.db-gray{background:#f5f5f0;color:#888}
-.load-note{font-size:12.5px;color:#666;line-height:1.75;border:1px solid #eee;border-radius:12px;padding:1rem 1.25rem;margin-top:1rem;background:#FAFAF5}
-.alicia-card{background:#FAFAF5;border:1px solid #eee;border-radius:14px;padding:1.35rem 1.6rem;margin-top:1rem}
-.alicia-inner{display:flex;align-items:flex-start;gap:1.1rem}
-.alicia-av{width:46px;height:46px;border-radius:50%;background:#FAEEDA;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:500;color:#633806;flex-shrink:0}
-.alicia-text{font-size:13px;color:#555;line-height:1.8}
-.alicia-name{font-size:15px;font-weight:500;color:#1A1A2E;margin-bottom:3px}
-.alicia-role{font-size:11px;color:#999;margin-bottom:10px}
-.alicia-li{font-size:11.5px;color:#185FA5;text-decoration:none;border-bottom:1px solid #B5D4F4;margin-top:8px;display:inline-block}
-.save-bar{display:flex;align-items:center;gap:10px;margin-bottom:1.35rem}
-.export-btn{font-size:12.5px;color:#666;background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:7px 16px;cursor:pointer}
-.export-btn:hover{background:#f5f5f0;color:#1A1A2E}
-.save-ind{font-size:11.5px;color:#aaa;font-style:italic}
-.foot{text-align:center;padding:2.5rem 0 .5rem;font-size:12px;color:#bbb}
-@media(max-width:720px){
-  .tgrid,.pgrid{grid-template-columns:1fr 1fr}
-  .cg,.fg,.rg,.impact-grid,.wave-callout{grid-template-columns:1fr}
-  .score-order,.fdx-g{grid-template-columns:1fr 1fr}
-  .week-grid{grid-template-columns:1fr}
-  .h1{font-size:24px}
-  .container{padding:2rem 1.25rem 3rem}
+.day-pill{display:inline-block;font-size:10px;padding:2px 10px;border-radius:20px;margin-top:.55rem}
+.dp-amber{background:#FAEEDA;color:#633806}
+.dp-gray{background:#F2F0ED;color:#888}
+.load-note{font-size:13px;color:#666;line-height:1.8;border:1px solid #ede8e0;border-radius:14px;padding:1.15rem 1.5rem;background:#FAFAF6}
+.load-note strong{color:#1A1A2E;font-weight:500}
+.comp-signals{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:1.25rem 0}
+.comp-card{background:#fff;border:1px solid #e8e3da;border-radius:12px;padding:.85rem 1rem}
+.comp-logo{font-size:10px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:#aaa;margin-bottom:5px}
+.comp-signal{font-size:18px;font-weight:500;line-height:1;margin-bottom:4px}
+.comp-signal.down{color:#C0392B}
+.comp-signal.up{color:#27AE60}
+.comp-signal.watch{color:#E67E22}
+.comp-desc{font-size:11.5px;color:#666;line-height:1.55}
+.score-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:1.5rem}
+.scard{background:#fff;border:1px solid #e8e3da;border-radius:12px;padding:1rem;text-align:center}
+.scard-num{font-size:24px;font-weight:500;color:#EF9F27;line-height:1;margin-bottom:4px}
+.scard-name{font-size:13px;font-weight:500;color:#1A1A2E;margin-bottom:3px}
+.scard-owner{font-size:11.5px;color:#888;margin-bottom:6px}
+.scard-status{display:inline-block;font-size:10px;padding:2px 9px;border-radius:20px}
+.st-amber{background:#FAEEDA;color:#633806}
+.st-gray{background:#F0F0ED;color:#777}
+.st-slate{background:#EEEEF5;color:#666}
+.wflow{display:flex;flex-direction:column;align-items:center;gap:8px;margin:1.25rem 0 1.5rem}
+.wf-source{font-size:12.5px;font-weight:500;background:#FAEEDA;color:#633806;padding:7px 22px;border-radius:22px}
+.wf-arr{font-size:18px;color:#ccc;line-height:1;text-align:center}
+.wf-split{display:grid;grid-template-columns:1fr 60px 1fr;gap:10px;width:100%;align-items:center}
+.wf-box{background:#fff;border:1px solid #e8e3da;border-radius:12px;padding:.75rem 1rem;font-size:12.5px;text-align:center;line-height:1.5}
+.wf-both{font-size:11px;color:#bbb;text-align:center;line-height:1.5}
+.wf-split-arrs{display:grid;grid-template-columns:1fr 60px 1fr;gap:10px;width:100%}
+.wf-output{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%}
+.wf-out-box{background:#FAFAF6;border:1px solid #ebe6de;border-radius:12px;padding:.75rem 1rem;font-size:12px;text-align:center;color:#555;line-height:1.5}
+.wf-caption{font-size:11.5px;color:#888;text-align:center;font-style:italic;margin-top:4px}
+.big-bucket{margin-bottom:2.25rem}
+.big-bucket-hd{display:flex;align-items:baseline;gap:10px;margin-bottom:.9rem;padding-bottom:.75rem;border-bottom:1px solid #f0ebe3}
+.big-bucket-icon{font-size:17px;line-height:1}
+.big-bucket-label{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#EF9F27}
+.big-bucket-sub{font-size:13px;color:#999;font-style:italic;margin-left:6px}
+.big-idea-card{background:#fff;border:1px solid #e8e3da;border-radius:14px;padding:1.15rem 1.3rem}
+.big-idea-name{font-size:13.5px;font-weight:500;color:#1A1A2E;margin-bottom:.45rem;line-height:1.35}
+.big-idea-body{font-size:12.5px;color:#555;line-height:1.75}
+.big-idea-signal{font-size:11px;color:#EF9F27;font-weight:500;margin-top:.6rem;padding-top:.55rem;border-top:1px solid #f5f0e8}
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.team-card{background:#fff;border:1px solid #e8e3da;border-radius:14px;padding:1.1rem}
+.avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;margin-bottom:.7rem}
+.av-blue{background:#DEEEFF;color:#0E4A80}
+.av-teal{background:#C5EDE1;color:#075040}
+.av-purple{background:#DDD8F8;color:#3D328A}
+.av-coral{background:#FDDACE;color:#752C13}
+.team-name{font-size:13.5px;font-weight:500;color:#1A1A2E;margin-bottom:2px}
+.team-title{font-size:11px;color:#aaa;margin-bottom:.6rem;line-height:1.4}
+.team-note{font-size:12px;color:#666;line-height:1.6}
+.rhythm-section{margin-top:2rem}
+.rhythm-label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#aaa;margin-bottom:.65rem}
+.alicia-wrap{background:#FAFAF6;border:1px solid #ede8e0;border-radius:16px;padding:1.5rem 1.75rem}
+.alicia-row{display:flex;align-items:flex-start;gap:1.2rem}
+.alicia-av{width:48px;height:48px;border-radius:50%;background:#FAEEDA;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600;color:#633806;flex-shrink:0;margin-top:2px}
+.alicia-name{font-size:15.5px;font-weight:500;color:#1A1A2E;margin-bottom:2px}
+.alicia-role{font-size:11.5px;color:#bbb;margin-bottom:.85rem}
+.alicia-body{font-size:13px;color:#555;line-height:1.9}
+.alicia-link{font-size:12px;color:#1A6FAA;text-decoration:none;border-bottom:1px solid #B5D4F4;margin-top:.8rem;display:inline-block}
+.weeks-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:.85rem}
+.week-pill{background:#fff;border:1px solid #e8e3da;border-radius:10px;padding:.65rem .75rem;text-align:center}
+.week-pill-n{font-size:10px;color:#bbb;text-transform:uppercase;letter-spacing:.08em;margin-bottom:3px}
+.week-pill-v{font-size:12.5px;font-weight:500;color:#1A1A2E}
+.fdx-bottom{background:#FAFAF6;border:1px solid #ebe6de;border-radius:16px;padding:1.75rem 2rem;margin-bottom:1.5rem}
+.fdx-eyebrow{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#EF9F27;font-weight:500;margin-bottom:.55rem}
+.fdx-title{font-size:20px;font-weight:500;color:#1A1A2E;margin-bottom:.7rem;line-height:1.3}
+.fdx-motto{font-size:15px;font-weight:500;color:#EF9F27;background:#FFFDF4;border:1px solid #F5E4BE;border-radius:10px;padding:.7rem 1.1rem;display:inline-block;margin-bottom:1.2rem}
+.fdx-body{font-size:13px;color:#666;line-height:1.75;margin-bottom:1.35rem}
+.fdx-pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:1.35rem}
+.fdx-pillar{padding-left:.9rem;border-left:2px solid #EF9F27}
+.fdx-pillar-label{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#bbb;margin-bottom:4px}
+.fdx-pillar-val{font-size:13px;font-weight:500;color:#1A1A2E;line-height:1.45}
+.fdx-steps-label{font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:#888;margin-bottom:.85rem;padding-top:1.1rem;border-top:1px solid #ede8e0}
+.fdx-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:1.1rem}
+.fdx-step{background:#fff;border:1px solid #e8e3da;border-radius:12px;padding:.85rem 1rem}
+.fdx-step-num{font-size:18px;font-weight:500;color:#EF9F27;line-height:1;margin-bottom:5px}
+.fdx-step-title{font-size:12.5px;font-weight:500;color:#1A1A2E;margin-bottom:4px}
+.fdx-step-body{font-size:12px;color:#666;line-height:1.6}
+.fdx-team-note{font-size:12px;color:#888;line-height:1.75;padding-top:.85rem;border-top:1px solid #ede8e0}
+.foot{text-align:center;padding:3rem 0 .5rem;font-size:12px;color:#ccc}
+@media(max-width:740px){
+  .ai-grid,.cards-2,.impact-grid,.wf-split,.wf-output{grid-template-columns:1fr}
+  .fdx-pillars,.score-row,.comp-signals,.fdx-steps{grid-template-columns:1fr 1fr}
+  .team-grid,.p-grid{grid-template-columns:1fr 1fr}
+  .week-grid,.weeks-row{grid-template-columns:1fr}
+  .hero-title{font-size:24px}
+  .wrap{padding:2.25rem 1.25rem 3.5rem}
+  .cards-3{grid-template-columns:1fr 1fr}
+  .big-bucket-hd{flex-wrap:wrap}
+  .big-bucket-sub{margin-left:0;width:100%}
 }
 </style>
 </head>
 <body>
-<div class="container">
+<div class="wrap">
+<div class="top-bar"></div>
 
-<div class="amber-bar"></div>
-
-<!-- LETTER FROM ALICIA -->
-<div class="letter-name">A note from Alicia Martin</div>
-<div class="letter">
-Rachel, Nicholas, Marissa, Benjamin — I built this framework because I believe we can do something extraordinary this year. Not just hit our trial numbers, but build a system that makes every number we report mean something, connects every campaign we run to a real outcome, and has us fully ready when Wavelength and Horizon go live. What follows is my best thinking on how we get there together. I'm grateful to be building this with this team, and I'm ready to execute.
+<!-- LETTER -->
+<div class="from-label">Quick note from Alicia</div>
+<div class="letter-box">
+  As a takeaway from our on-site last week, I built this framework. The biggest takeaway is that I genuinely feel we are building something extraordinary over the next couple of years. In addition to a path towards hitting our trial numbers, we have the opportunity to build a sustainable system that helps us tie every number we report sync with the many motions we have in place — allowing us to connect every initiative to real outcomes while we launch Water and the soon-to-come Sun. What follows is my best thinking on how we get there together.
+  <div class="letter-sig">— Alicia · <em>Q2 2026</em></div>
 </div>
 
-<div class="eyebrow">Revenue Marketing Intelligence · Q2 2026</div>
-<h1 class="h1">Every ambitious business wants to grow without drowning in complexity. They want a system that thinks ahead, moves with them, and makes their team extraordinary. That's what we build.</h1>
-<p class="sub">ActiveCampaign is the leader in marketing AI automation — and the businesses that choose us don't just get software. They get a strategic advantage that makes their people more powerful, their campaigns smarter, and their growth more predictable.</p>
-
+<!-- HERO -->
+<div class="eyebrow">Revenue Marketing Intelligence · ActiveCampaign · Q2 2026</div>
+<h1 class="hero-title">Every ambitious business wants to grow without drowning in complexity. They want a system that thinks ahead, moves with them, and makes their team extraordinary. That's what we are building.</h1>
+<p class="hero-sub">ActiveCampaign is the leader in marketing AI automation — and the businesses that choose us don't just get software. They get a strategic advantage that makes their people more powerful, their campaigns smarter, and their growth more predictable.</p>
 <div class="narr">
-<p>We don't replace the talent businesses have built. We amplify it. Every marketer, analyst, and operator using AC becomes exponentially more effective — because the system does the heavy lifting on data, sequencing, and intelligence, leaving them free to do what humans do best: think strategically, build relationships, and make great decisions.</p>
-<p>And we are building toward something remarkable. This year, we launch two platform capabilities that change what's possible — and the five initiatives in this document are designed to have the data, campaigns, and infrastructure ready when they do.</p>
+  <p>We don't replace the talent businesses have built. We amplify it. Every marketer, analyst, and operator using AC becomes exponentially more effective — because the system does the heavy lifting on data, sequencing, and intelligence, leaving them free to do what humans do best: think strategically, build relationships, and make great decisions.</p>
+  <p>This year, we are launching many platform capabilities that change what's possible — and the six projects in this document are designed to have the data, campaigns, and infrastructure ready when they do.</p>
 </div>
 
-<div class="wave-callout">
-<div class="wave-card wave-amber">
-<div class="wave-badge">Now — Wavelength</div>
-<div class="wave-title">Generate beautiful emails from your own data</div>
-<div class="wave-desc">Upload your previous campaigns, content, and project documentation. Wavelength learns your voice, your patterns, and your brand — and generates ready-to-send emails you can approve in a moment. The data infrastructure we're building now feeds directly into this. The better our data, the better Wavelength performs.</div>
+<!-- AI BANNER -->
+<div class="ai-banner">⚡ No documented competitor is building this combination at scale — AI that learns from your specific dataset to generate custom templates, paired with a cross-platform intelligence layer that turns your own data into next-step decisions. This is worth teasing everywhere.</div>
+
+<!-- AI CARDS -->
+<div class="ai-grid">
+  <div class="ai-card ai-amber">
+    <div class="ai-eyebrow">🌊 Now — Water</div>
+    <div class="ai-title">Generate beautiful emails from your own data</div>
+    <div class="ai-body">Upload previous campaigns, content, and project documentation. Water learns your voice, your patterns, your brand — and generates ready-to-send emails you can approve in a moment. The data infrastructure we're building now feeds directly into this.</div>
+    <div class="ai-tag">AI email generation · live this year</div>
+  </div>
+  <div class="ai-card ai-blue">
+    <div class="ai-eyebrow">🌅 Coming — Sun</div>
+    <div class="ai-title">Your data already knows what to do next</div>
+    <div class="ai-body">Most tools show you a dashboard and leave the thinking to you. Sun synthesizes everything your customers have already told us — every contact, every send, every pipeline signal — and surfaces what to do next, specific to them. Not generic insights. Your intelligence, made actionable.</div>
+    <div class="ai-tag">Revenue intelligence · coming soon</div>
+  </div>
 </div>
-<div class="wave-card wave-blue">
-<div class="wave-badge">Coming — Horizon</div>
-<div class="wave-title">Visibility into what's working, and what to do next</div>
-<div class="wave-desc">Horizon gives every marketer a clear line of sight into their data — not just what happened, but what it means and what action to take. When our ELT reporting, scoring framework, and Airtable integration are running cleanly, Horizon doesn't just show the numbers. It shows the story behind them.</div>
-</div>
+
+<hr class="div">
+
+<!-- ESTIMATED IMPACT -->
+<div class="sh">Why this matters — estimated impact</div>
+<p class="impact-note">The work that's been done has already generated real data to learn from — and the Airtable integration will give us even more precision. What follows is grounded in both AC's own performance numbers and published SaaS benchmarks. These are directional targets worth building toward.</p>
+<div class="impact-grid">
+  <div class="imp-card">
+    <div class="imp-num">3.1×</div>
+    <div class="imp-title">The activation multiplier</div>
+    <div class="imp-body">Behavior-triggered onboarding sequences activate 3.1× more trial users to key milestones vs. static drip. This is not an incremental improvement — it's a structural change in how we move people from trial to customer. The MQL scoring work is building directly toward this. Vertical-specific messaging amplifies it further: the right story, to the right buyer, at the right moment.</div>
+    <div class="imp-source">Source: ProductLed / SaaS activation research · behavioral vs. static onboarding · <em>published industry benchmark</em></div>
+  </div>
+  <div class="imp-card">
+    <div class="imp-num">39%</div>
+    <div class="imp-title">Cold trial open rates — the previously interested audience is just waiting</div>
+    <div class="imp-body">Nearly 2 out of every 5 people who walked away from a trial are still opening our emails. That means the conversation was never really over — we just haven't sent the right message yet. If we reactivated even a fraction of that engaged audience, we'd be generating new customers without spending a dollar on new acquisition. An audit of the current welcome, nurture, and win-back sequences — reviewed with Shauna and the lifecycle team — is one of the most meaningful opportunities in front of us right now.</div>
+    <div class="imp-source">Source: <em>ActiveCampaign internal data</em> · abandoned trial email engagement · lifecycle audit recommended</div>
+  </div>
+  <div class="imp-card">
+    <div class="imp-num">~81%</div>
+    <div class="imp-title">Trial abandonment — our biggest unconverted opportunity</div>
+    <div class="imp-body">Our trial-to-paid conversion rate has been improving and is stabilizing around 19% — at or above SaaS industry norms. That means roughly 81% of trials don't convert yet. Not a failure stat — an opportunity stat. This funnel already exists inside our data. It is not a new audience. It is an under-served one. Targeting it doesn't require new acquisition. It requires using what we already have.</div>
+    <div class="imp-source">Source: <em>AC internal conversion data (Apr 2026)</em> · SaaS benchmark range: 14–25% (Totango / Paddle ProfitWell 2025 SaaS Benchmarks Report)</div>
+  </div>
+  <div class="imp-card">
+    <div class="imp-num">~40 hrs</div>
+    <div class="imp-title">Weekly hours reclaimed through reporting automation</div>
+    <div class="imp-body">The ELT process previously required 60 hours/week across two contractors. With Looker → Airtable automation and structured templates, the same output takes an estimated 15–20 hours — freeing 40+ hours per week for campaign work, scoring, and growth initiatives that move the actual number.</div>
+    <div class="imp-source">Based on documented contractor hours (60/wk) + <em>industry automation efficiency benchmarks</em> for structured reporting workflows</div>
+  </div>
 </div>
 
 <hr class="div">
 
-<div class="fdx-label">Strategic recommendation</div>
-<div class="fdx-rec">
-<div class="fdx-title">Adopt 4DX as our shared operating model — and unify the team around it</div>
-<div class="fdx-sub">The 4 Disciplines of Execution is a recommendation for how we work together so that five initiatives don't become five separate conversations. Alicia will work with Marissa and Mia to architect the organizational structure and cadence. Nicholas holds the data integrity. Benjamin's team executes the demand generation. Rachel steers the vision. <a href="https://hbr.org/2019/07/the-4-disciplines-of-execution" target="_blank" class="cite">Teams using 4DX achieve their goals 2–3x more often than those operating without a shared operating model.</a></div>
-<div class="fdx-g">
-<div class="fdx-col"><div class="fdx-col-n">Wildly important goal</div><div class="fdx-col-v">ARR growth through trial conversion</div></div>
-<div class="fdx-col"><div class="fdx-col-n">Lead measures</div><div class="fdx-col-v">These 5 initiatives — each one moves the WIG</div></div>
-<div class="fdx-col"><div class="fdx-col-n">Scoreboard</div><div class="fdx-col-v">This document + Airtable + weekly ELT brief</div></div>
-<div class="fdx-col"><div class="fdx-col-n">Cadence</div><div class="fdx-col-v">Monday data pull · Thursday ELT review</div></div>
-</div>
-<div class="fdx-team">Rachel steers the WIG · Alicia + Nicholas build and maintain the scoreboard · Marissa + Mia organize the process architecture · Benjamin Elias leads campaign execution · every Thursday we hold each other accountable and move forward together.</div>
+<!-- PRIORITY CARDS -->
+<div class="priorities-label">Six projects, one system — click to explore</div>
+<div class="p-grid">
+  <div class="pc on" id="pc-elt" onclick="st('elt')"><div class="pc-num">Priority 1</div><div class="pc-name">ELT weekly reporting</div><span class="pc-badge">Active</span></div>
+  <div class="pc" id="pc-camp" onclick="st('camp')"><div class="pc-num">Priority 2</div><div class="pc-name">Mailchimp Switcher</div><span class="pc-badge">In flight</span></div>
+  <div class="pc" id="pc-air" onclick="st('air')"><div class="pc-num">Priority 3</div><div class="pc-name">Airtable integration</div><span class="pc-badge">In build</span></div>
+  <div class="pc" id="pc-score" onclick="st('score')"><div class="pc-num">Priority 4</div><div class="pc-name">Scoring framework</div><span class="pc-badge">In design</span></div>
+  <div class="pc" id="pc-monks" onclick="st('monks')"><div class="pc-num">Priority 5</div><div class="pc-name">Monks SFTP</div><span class="pc-badge">This week</span></div>
+  <div class="pc" id="pc-big" onclick="st('big')"><div class="pc-num">Priority 6</div><div class="pc-name">Big Ideas</div><span class="pc-badge">Forward</span></div>
 </div>
 
 <hr class="div">
-<div class="sh">Five initiatives, one system</div>
-<div class="pgrid">
-<div class="pc on" id="pc-elt" onclick="st('elt')"><div class="pn">Priority 1</div><div class="pt">ELT weekly reporting</div><span class="ps">Active</span></div>
-<div class="pc" id="pc-camp" onclick="st('camp')"><div class="pn">Priority 2</div><div class="pt">Campaign performance</div><span class="ps">Active</span></div>
-<div class="pc" id="pc-air" onclick="st('air')"><div class="pn">Priority 3</div><div class="pt">Airtable integration</div><span class="ps">In build</span></div>
-<div class="pc" id="pc-score" onclick="st('score')"><div class="pn">Priority 4</div><div class="pt">Scoring framework</div><span class="ps">In design</span></div>
-<div class="pc" id="pc-monks" onclick="st('monks')"><div class="pn">Priority 5</div><div class="pt">Monks SFTP</div><span class="ps">This week</span></div>
+<div class="tabs-hd">
+  <div class="sh" style="margin-bottom:0">Project deep dives</div>
+  <div style="display:flex;align-items:center;gap:10px">
+    <span class="save-status" id="save-status">Notes auto-save in this browser</span>
+    <button class="export-btn" onclick="exportNotes()">Export notes ↗</button>
+  </div>
 </div>
-
-<hr class="div">
-<div class="sh">Initiative deep dives</div>
-<nav class="tabs">
-<button class="tb on" onclick="st('elt')">1 · ELT reporting</button>
-<button class="tb" onclick="st('camp')">2 · Campaigns</button>
-<button class="tb" onclick="st('air')">3 · Airtable</button>
-<button class="tb" onclick="st('score')">4 · Scoring</button>
-<button class="tb" onclick="st('monks')">5 · Monks SFTP</button>
+<nav class="tabs" style="margin-top:.75rem">
+  <button class="tb on" onclick="st('elt')">1 · ELT</button>
+  <button class="tb" onclick="st('camp')">2 · Mailchimp Switcher</button>
+  <button class="tb" onclick="st('air')">3 · Airtable</button>
+  <button class="tb" onclick="st('score')">4 · Scoring</button>
+  <button class="tb" onclick="st('monks')">5 · Monks</button>
+  <button class="tb" onclick="st('big')">6 · Big Ideas</button>
 </nav>
 
+<!-- P1: ELT -->
 <div class="ip on" id="ip-elt">
-<span class="ibadge">Priority 1 · every Monday</span>
-<h2 class="it">ELT weekly reporting</h2>
-<p class="is">The backbone of everything. A Monday-to-Thursday workflow that turns raw data into a strategy-ready story for ELT — covering the full funnel from traffic to trials to ARR, by source, region, and onboarding signal.</p>
-<div class="cg">
-<div class="cc"><div class="cl">Data pulled Monday</div><div class="cb"><ul><li>Traffic by source: paid, organic, direct</li><li>Top 12 priority countries + other bucket</li><li>MQL volume, demos, pricing requests</li><li>Trial count by region and source</li><li>Switcher data: who they left, conversion rate</li><li>Onboarding answers: size, contacts, experience</li></ul></div></div>
-<div class="cc"><div class="cl">The funnel we measure</div><div class="cb"><ul><li>Traffic → MQL (scored behavioral signals)</li><li>MQL → trial (primary company KPI)</li><li>Trial → demo or pricing request</li><li>Trial → conversion (ARR — priority 1)</li><li>Who is buying big and why</li></ul></div></div>
-<div class="cc"><div class="cl">Weekly workflow</div><div class="cb"><ul><li>Monday 9–11am: pull and validate (Alicia + Nicholas)</li><li>Tuesday: deep dive on ups/downs, Airtable context</li><li>Wednesday: build the story, organize the narrative</li><li>Thursday: polish and present to ELT</li></ul></div></div>
-<div class="cc"><div class="cl">Why it matters</div><div class="cb">Aligned RevOps reporting drives <a href="https://www.salesforce.com/resources/articles/what-is-revenue-operations/" target="_blank" class="cite">36% more revenue growth</a>. Clean Monday data is the foundation — scoring, Airtable context, and campaign attribution all depend on it. When a country moves, we need the story, not just the number.</div></div>
-</div>
-<div class="fg">
-<div class="fc"><div class="cl">Next steps</div><textarea class="ff" id="elt-1" placeholder="Define together — what are the immediate next actions?"></textarea></div>
-<div class="fc"><div class="cl">Open questions</div><textarea class="ff" id="elt-2" placeholder="What needs answering before we fully execute?"></textarea></div>
-<div class="fc"><div class="cl">Timeline</div><textarea class="ff" id="elt-3" placeholder="TBD — define milestones with the team."></textarea></div>
-</div>
-<div class="cc"><div class="cl">Expected outcome</div><div class="cb">A weekly intelligence brief that gives ELT not just numbers but narrative — what changed, what it means, what we recommend. When a country moves, we have the campaign context to explain it immediately.</div></div>
+  <span class="i-badge">Priority 1 · every Monday</span>
+  <h2 class="i-title">ELT weekly reporting</h2>
+  <p class="i-sub">The backbone of everything. A Monday-to-Thursday workflow that turns raw data into a strategy-ready story for ELT — covering the full funnel from traffic to trials to ARR, by source, region, and onboarding signal.</p>
+  <div class="cards-2">
+    <div class="card"><div class="card-label">Data pulled Monday</div><div class="card-body"><ul><li>Traffic by source — paid, organic, direct</li><li>Top 12 priority countries + other bucket</li><li>MQL volume, demos, pricing requests</li><li>Trial count by region and source</li><li>Switcher data: who they left, conversion rate</li><li>Onboarding answers: size, contacts, experience</li></ul></div></div>
+    <div class="card"><div class="card-label">The funnel we measure</div><div class="card-body"><ul><li>Traffic → MQL (scored behavioral signals)</li><li>MQL → trial (primary company KPI)</li><li>Trial → demo or pricing request</li><li>Trial → conversion (ARR — north star)</li><li>Who is buying big and why</li></ul></div></div>
+    <div class="card"><div class="card-label">Weekly rhythm</div><div class="card-body"><ul><li>Monday: pull + validate (Alicia + Nick)</li><li>Tuesday: deep dive on movements, Airtable context</li><li>Wednesday: build the story + office hours review</li><li>Thursday: Rachel presents to ELT</li></ul></div></div>
+    <div class="card"><div class="card-label">Why it matters</div><div class="card-body">Aligned RevOps reporting drives <a href="https://www.salesforce.com/resources/articles/what-is-revenue-operations/" target="_blank" class="cite">36% more revenue growth</a>. Clean Monday data is the foundation — scoring, Airtable context, and campaign attribution all depend on it. When a country moves, we need the story, not just the number.</div></div>
+  </div>
+  <div class="load-note" style="margin-bottom:1.25rem">
+    The primary focus of the weekly rhythm is preparing ELT numbers that tell a complete story — which requires <strong>Airtable data alignment</strong> to connect every number to an initiative. Equally important is initiative-level reporting: the Mailchimp takeover is already in flight and additional platform takeovers are on deck, each needing its own reporting cadence. Ad hoc data requests will become more streamlined as Airtable matures. On the vendor side, active work with Monks on spend data and with Gina on budget planning. Bigger open question: what's happening with demos that didn't convert, and are there opportunities in the onboarding email and SMS flows we haven't fully addressed yet?
+  </div>
+  <div class="cards-3">
+    <div class="card"><div class="card-label">Next steps</div><textarea class="ff" id="elt-1" placeholder="What are the immediate next actions?"></textarea></div>
+    <div class="card"><div class="card-label">Open questions</div><textarea class="ff" id="elt-2" placeholder="What needs answering before we fully execute?"></textarea></div>
+    <div class="card"><div class="card-label">Timeline</div><textarea class="ff" id="elt-3" placeholder="Define milestones with the team."></textarea></div>
+  </div>
 </div>
 
+<!-- P2: MAILCHIMP SWITCHER -->
 <div class="ip" id="ip-camp">
-<span class="ibadge">Priority 2 · ongoing</span>
-<h2 class="it">Campaign performance tracking</h2>
-<p class="is">Starts with unification — naming conventions, messaging audit, competitive analysis — then builds to email and SMS onboarding flow optimization, Airtable integration, and scoring across every channel.</p>
-<div class="cg">
-<div class="cc"><div class="cl">Step 1 — unify naming conventions</div><div class="cb"><ul><li>Standardize across email, ads, events, outreach</li><li>Apply to Mailchimp, HubSpot, Klaviyo, Brevo</li><li>One convention = one rollup in Airtable + Looker</li><li>Coordinate with Nico's campaign setup</li></ul></div></div>
-<div class="cc"><div class="cl">Step 2 — messaging audit + competitive analysis</div><div class="cb"><ul><li>Audit AC messaging by channel and funnel stage</li><li>Benchmark vs. Mailchimp, HubSpot, Klaviyo, Brevo</li><li>Identify vertical messaging gaps</li><li>Switcher campaigns: Mailchimp in flight, HubSpot next</li></ul></div></div>
-<div class="cc"><div class="cl">Step 3 — email and SMS onboarding flow</div><div class="cb"><ul><li>Current onboarding needs adjustment (Alicia owns)</li><li>Sequence, timing, and messaging by segment</li><li>SMS for high-engagement onboarding touchpoints</li><li>Lifecycle alignment: Sean, Meg, Perry</li></ul></div></div>
-<div class="cc"><div class="cl">Step 4 — Airtable + scoring integration</div><div class="cb"><ul><li>Map all campaigns to Airtable OKRs and initiatives</li><li>Team integrations: ads, events, lifecycle, cold outreach</li><li>Campaign signals feed MQL scoring model</li><li>Context layer: why numbers moved, what changed</li></ul></div></div>
-</div>
-<div class="fg">
-<div class="fc"><div class="cl">Next steps</div><textarea class="ff" id="camp-1" placeholder="Define together — what are the immediate next actions?"></textarea></div>
-<div class="fc"><div class="cl">Open questions</div><textarea class="ff" id="camp-2" placeholder="What needs answering before we fully execute?"></textarea></div>
-<div class="fc"><div class="cl">Timeline</div><textarea class="ff" id="camp-3" placeholder="TBD — define milestones with the team."></textarea></div>
-</div>
-<div class="cc"><div class="cl">Expected outcome</div><div class="cb">A live campaign dashboard with naming conventions that make rollups automatic, messaging that converts by industry, and onboarding flows that work. The Mailchimp switcher template becomes reusable for every competitor we add.</div></div>
+  <span class="i-badge">Priority 2 · in flight</span>
+  <h2 class="i-title">Mailchimp Switcher</h2>
+  <p class="i-sub">A multi-motion conquest system — currently focused on Mailchimp, designed to become the template for every competitor takeout. The goal is to build a repeatable process that is measurable, optimizable, and connected to ELT-level reporting.</p>
+  <div class="sh-sm" style="margin-top:.25rem">The market signal — why now</div>
+  <div class="comp-signals">
+    <div class="comp-card"><div class="comp-logo">Mailchimp</div><div class="comp-signal down">−17.8%</div><div class="comp-desc">Active domains dropped 283K → 233K in 4 months (Mar–Jul 2025). 3:1 ratio of former-to-current users. Post-Intuit pricing driving accelerated churn.</div></div>
+    <div class="comp-card"><div class="comp-logo">HubSpot</div><div class="comp-signal watch">$$</div><div class="comp-desc">"Safe but expensive." Highest price point in category. Price-sensitive customers actively looking for automation depth at a lower cost.</div></div>
+    <div class="comp-card"><div class="comp-logo">Brevo</div><div class="comp-signal up">↑</div><div class="comp-desc">€500M raised, unicorn (Dec 2025). Aggressive on volume pricing. Rising challenger but weaker on automation depth and CRM integration.</div></div>
+    <div class="comp-card"><div class="comp-logo">RD Station</div><div class="comp-signal watch">LATAM</div><div class="comp-desc">Dominant in Brazil. Primarily a LATAM story. AC differentiates on global reach, AI roadmap, and automation depth.</div></div>
+  </div>
+  <div class="cards-2">
+    <div class="card"><div class="card-label">Motions we are running</div><div class="card-body"><ul><li>Churned + expired customer outreach</li><li>Lookalike lists from converters → ads + winback</li><li>Cold list outreach via Unify</li><li>Prospect list campaigns</li><li>Webinars: AC vs. Mailchimp differences</li><li>"Easy button" — migrate from competitor to AC</li></ul></div></div>
+    <div class="card"><div class="card-label">What we report — due Monday</div><div class="card-body"><ul><li>Total switchers — weekly count</li><li>Switchers by competitor source</li><li>Newsletter campaign performance</li><li>Ad performance by placement + creative</li><li>Benyamin's review pack — same cadence as ELT</li><li>Both reports tracking to Monday as of today ✦</li></ul></div></div>
+    <div class="card"><div class="card-label">Building the machine, not just the campaign</div><div class="card-body">Analyze what is working and what is not. Provide objective recommendations on where to invest more and where to pull back. Use Airtable to unify everything down to task level — with metrics tied to each task — rolling up to initiatives and QBRs. All teams get near real-time access. The Mailchimp process becomes the standard template for every competitor takeout.</div></div>
+    <div class="card"><div class="card-label">Long-term: automated stakeholder intelligence</div><div class="card-body">Build an Airtable notification system that sends relevant reporting, metrics, and pending tasks to each stakeholder automatically — customized per user. Benyamin gets switcher metrics. Nick gets analytical depth. Rachel gets the overview. Marissa gets project progress. The dashboard is always on, always current, always relevant.</div></div>
+  </div>
+  <div class="cards-3">
+    <div class="card"><div class="card-label">Next steps</div><textarea class="ff" id="camp-1" placeholder="e.g. confirm Monday reporting structure with Benyamin, Airtable mapping..."></textarea></div>
+    <div class="card"><div class="card-label">Open questions</div><textarea class="ff" id="camp-2" placeholder="e.g. Which motions are converting best? Webinar cadence?"></textarea></div>
+    <div class="card"><div class="card-label">Timeline</div><textarea class="ff" id="camp-3" placeholder="Current: Mailchimp. Next: process documentation. Then: HubSpot."></textarea></div>
+  </div>
 </div>
 
+<!-- P3: AIRTABLE -->
 <div class="ip" id="ip-air">
-<span class="ibadge">Priority 3 · in build</span>
-<h2 class="it">Airtable integration</h2>
-<p class="is">The connective tissue. Airtable unifies OKRs, initiatives, campaigns, and deliverables under one naming convention — enabling cross-team rollups, AI wave tracking, and the context layer that explains why numbers move.</p>
-<div class="cg">
-<div class="cc"><div class="cl">Architecture (top down)</div><div class="cb"><ul><li>OKRs → Initiatives → Projects → Teams → Tasks</li><li>Deliverables and reporting as output layer</li><li>Naming convention unified across all teams</li><li>Automations: trigger emails, alerts, updates</li></ul></div></div>
-<div class="cc"><div class="cl">AI wave launches to track</div><div class="cb"><ul><li>Wavelength — AI email generation from data and content</li><li>Horizon — future visibility and actionable intelligence</li><li>Wave 3 — TBD, leadership input needed</li><li>Wave 4 — TBD, leadership input needed</li></ul></div></div>
-<div class="cc"><div class="cl">Technical connections</div><div class="cb"><ul><li>Looker → auto-write to Google Sheets</li><li>Google Sheets → import to Airtable</li><li>Airtable → feed the cloud analytics project</li><li>Same data: reporting (Looker/Claude) + organization (Airtable)</li></ul></div></div>
-<div class="cc"><div class="cl">Future: BI + RevOps alignment</div><div class="cb">Once Airtable is proven, work with BI to understand RevOps forecasting and align processes. Prove Airtable first — that's the right sequence. <a href="https://hbr.org/2019/07/the-4-disciplines-of-execution" target="_blank" class="cite">4DX principle: focus before you expand scope.</a></div></div>
-</div>
-<div class="fg">
-<div class="fc"><div class="cl">Next steps</div><textarea class="ff" id="air-1" placeholder="e.g. naming conventions, Looker table mapping, Airtable base owners by team..."></textarea></div>
-<div class="fc"><div class="cl">Open questions</div><textarea class="ff" id="air-2" placeholder="e.g. Who owns the base? Which teams adopt the convention? Rollout timeline?"></textarea></div>
-<div class="fc"><div class="cl">Timeline</div><textarea class="ff" id="air-3" placeholder="TBD — define milestones with the team."></textarea></div>
-</div>
-<div class="cc"><div class="cl">Expected outcome</div><div class="cb">When something changes in any market, we can immediately pull up Airtable context: what we did, when, what changed. The data tells us what happened. Airtable tells us why. And when Horizon launches, this context layer becomes its intelligence layer.</div></div>
+  <span class="i-badge">Priority 3 · in build</span>
+  <h2 class="i-title">Airtable integration</h2>
+  <p class="i-sub">The connective tissue. Airtable unifies OKRs, projects, campaigns, and deliverables under one naming and process convention — enabling cross-team roll-ups, AI wave tracking, and the context layer that explains why numbers move.</p>
+  <div class="cards-2">
+    <div class="card"><div class="card-label">Architecture (top down)</div><div class="card-body"><ul><li>OKRs → Initiatives &amp; Programs → Projects</li><li>Projects → Channels · Tactics · Teams · Tasks</li><li>Each team member gets their own Airtable interface view</li><li>Deliverables surface through personalized interfaces — not shared dashboards everyone has to navigate</li></ul></div></div>
+    <div class="card"><div class="card-label">AI wave launches to track</div><div class="card-body"><ul><li>Water — AI email generation from your own data</li><li>Sun — visibility and actionable intelligence</li><li>Wave 3 — TBD, leadership input needed</li><li>Wave 4 — TBD, leadership input needed</li></ul></div></div>
+    <div class="card"><div class="card-label">Naming &amp; process unification</div><div class="card-body"><ul><li>Consistent naming conventions across all teams and tools</li><li>Standardized intake processes for new projects and campaigns</li><li>Order of operations defined so data tells the right story</li><li>One language — from OKR to task — everyone speaks it</li></ul></div></div>
+    <div class="card"><div class="card-label">Automations built in</div><div class="card-body"><ul><li>Weekly digest — automatically delivered to each stakeholder</li><li>Alerts on project status changes and milestone hits</li><li>Intelligent fields that flag anomalies, surface context, and reduce manual updates</li><li>Looker → Sheets → Airtable: one pipeline, always current</li></ul></div></div>
+  </div>
+  <div class="sh-sm">One data source, two uses</div>
+  <div class="wflow">
+    <div class="wf-source">Looker — single source of truth</div>
+    <div class="wf-arr">↓</div>
+    <div class="wf-split">
+      <div class="wf-box"><strong>Nick's weekly report</strong><br><span style="font-size:11px;color:#888">+ Claude analysis layer</span></div>
+      <div class="wf-both">same<br>data<br>two<br>uses</div>
+      <div class="wf-box"><strong>Airtable context layer</strong><br><span style="font-size:11px;color:#888">campaign activity + project tracking</span></div>
+    </div>
+    <div class="wf-split-arrs"><div class="wf-arr">↓</div><div></div><div class="wf-arr">↓</div></div>
+    <div class="wf-output">
+      <div class="wf-out-box">ELT presentation — <em>the what</em></div>
+      <div class="wf-out-box">"Why it moved" — <em>the why</em></div>
+    </div>
+    <div class="wf-caption">Nick's report tells leadership what happened. Airtable tells them why. Claude helps find the story between them.</div>
+  </div>
+  <div class="cards-3">
+    <div class="card"><div class="card-label">Next steps</div><textarea class="ff" id="air-1" placeholder="e.g. naming conventions, Looker table mapping, base owners by team..."></textarea></div>
+    <div class="card"><div class="card-label">Open questions</div><textarea class="ff" id="air-2" placeholder="e.g. Who owns the base? Which teams adopt first? Rollout?"></textarea></div>
+    <div class="card"><div class="card-label">Timeline</div><textarea class="ff" id="air-3" placeholder="Define milestones with the team."></textarea></div>
+  </div>
 </div>
 
+<!-- P4: SCORING -->
 <div class="ip" id="ip-score">
-<span class="ibadge">Priority 4 · in design</span>
-<h2 class="it">Scoring framework</h2>
-<p class="is">Four scores, in sequence. Each one builds on the last. The goal is intelligent lead routing — so the right action happens automatically, at the right moment, without adding headcount.</p>
-<div class="score-order">
-<div class="so"><div class="so-n">01</div><div class="so-t">Onboarding score</div><div class="so-o">Alicia owns</div><span class="so-s st-a">Needs adjustment</span></div>
-<div class="so"><div class="so-n">02</div><div class="so-t">MQL score</div><div class="so-o">Nicholas McClanahan</div><span class="so-s st-p">In progress</span></div>
-<div class="so"><div class="so-n">03</div><div class="so-t">SQL score</div><div class="so-o">After MQL</div><span class="so-s st-n">Capacity block</span></div>
-<div class="so"><div class="so-n">04</div><div class="so-t">Fourth score</div><div class="so-o">TBD with team</div><span class="so-s st-t">TBD</span></div>
-</div>
-<div class="sh-sm">One data source, two uses</div>
-<div class="wflow">
-<div class="wf-top">Looker — single source of truth</div>
-<div class="wf-arr">↓</div>
-<div class="wf-row">
-<div class="wf-box"><span style="font-weight:500">Nicholas's weekly report</span><br><span style="font-size:11px;color:#888">+ Claude analysis layer</span></div>
-<div class="wf-mid">same data<br>two uses</div>
-<div class="wf-box"><span style="font-weight:500">Airtable context layer</span><br><span style="font-size:11px;color:#888">campaign activity + initiative tracking</span></div>
-</div>
-<div class="wf-row"><div class="wf-arr">↓</div><div></div><div class="wf-arr">↓</div></div>
-<div class="wf-row">
-<div class="wf-box" style="background:#FAFAFA">ELT presentation — the what</div>
-<div></div>
-<div class="wf-box" style="background:#FAFAFA">"Why it moved" — the why</div>
-</div>
-<div class="wf-note">Nicholas's report tells leadership what happened. Airtable tells them why. Claude helps find the story between them.</div>
-</div>
-<div class="cg">
-<div class="cc"><div class="cl">Onboarding signals (score 01)</div><div class="cb"><ul><li>How many employees? (deal size signal)</li><li>How many contacts? (pricing model — critical)</li><li>Switching from another provider? (highest intent)</li><li>Experience with email analytics? (sophistication)</li><li>Primary use case? (vertical segmentation input)</li></ul></div></div>
-<div class="cc"><div class="cl">Constraint before SQL</div><div class="cb">Sales doesn't have capacity to reach all MQLs. Before SQL scoring, we need routing logic: which threshold goes to sales, lifecycle automation, or self-serve nurture. This conversation happens with Sean's team first. <a href="https://www.marketingsherpa.com/article/benchmark/lead-gen-roi" target="_blank" class="cite">Predictive scoring: +77% lead gen ROI improvement.</a></div></div>
-</div>
-<div class="fg">
-<div class="fc"><div class="cl">Next steps</div><textarea class="ff" id="score-1" placeholder="e.g. pull onboarding data (Alicia), MQL thresholds (Nicholas), routing convo (Sean)..."></textarea></div>
-<div class="fc"><div class="cl">Open questions</div><textarea class="ff" id="score-2" placeholder="e.g. SQL capacity plan? 4th score definition? When to loop in BI?"></textarea></div>
-<div class="fc"><div class="cl">Timeline</div><textarea class="ff" id="score-3" placeholder="Onboarding: in progress. MQL: Nicholas leading. SQL: after capacity plan."></textarea></div>
-</div>
+  <span class="i-badge">Priority 4 · in design</span>
+  <h2 class="i-title">Scoring framework</h2>
+  <p class="i-sub">Four scores, in sequence. Each one builds on the last. The goal is intelligent lead routing — so the right action happens automatically, at the right moment — 3×ing our productivity and proactivity as a team.</p>
+  <div class="score-row">
+    <div class="scard"><div class="scard-num">01</div><div class="scard-name">Onboarding score</div><div class="scard-owner">Alicia owns</div><span class="scard-status st-amber">Needs adjustment</span></div>
+    <div class="scard"><div class="scard-num">02</div><div class="scard-name">MQL score</div><div class="scard-owner">Nick McClanahan</div><span class="scard-status st-amber">In progress</span></div>
+    <div class="scard"><div class="scard-num">03</div><div class="scard-name">SQL score</div><div class="scard-owner">After MQL is complete</div><span class="scard-status st-gray">Capacity block</span></div>
+    <div class="scard"><div class="scard-num">04</div><div class="scard-name">Fourth score</div><div class="scard-owner">TBD with team</div><span class="scard-status st-slate">TBD</span></div>
+  </div>
+  <div class="cards-2">
+    <div class="card"><div class="card-label">Onboarding signals (score 01)</div><div class="card-body"><ul><li>How many employees? (deal size signal)</li><li>How many contacts? (pricing model — critical)</li><li>Switching from another provider? (highest intent)</li><li>Experience with email analytics? (sophistication)</li><li>Primary use case? (vertical segmentation input)</li></ul></div></div>
+    <div class="card"><div class="card-label">Constraint + long-term strategy</div><div class="card-body">Sales capacity is the current blocker for MQL outreach. We need routing thresholds: which leads go to sales, lifecycle automation, or self-serve nurture. We also build campaigns to support sales long-term — so when capacity opens back up, the infrastructure is already there and ready. <a href="https://www.marketingsherpa.com/article/benchmark/lead-gen-roi" target="_blank" class="cite">Predictive scoring improves lead gen ROI by +77%.</a></div></div>
+  </div>
+  <div class="cards-3">
+    <div class="card"><div class="card-label">Next steps</div><textarea class="ff" id="score-1" placeholder="e.g. pull onboarding data (Alicia), MQL thresholds (Nick), routing convo..."></textarea></div>
+    <div class="card"><div class="card-label">Open questions</div><textarea class="ff" id="score-2" placeholder="e.g. SQL capacity plan? 4th score definition? When to loop in BI?"></textarea></div>
+    <div class="card"><div class="card-label">Timeline</div><textarea class="ff" id="score-3" placeholder="Onboarding: in progress. MQL: Nick leading. SQL: after capacity plan."></textarea></div>
+  </div>
 </div>
 
+<!-- P5: MONKS -->
 <div class="ip" id="ip-monks">
-<span class="ibadge">Priority 5 · this week</span>
-<h2 class="it">Monks SFTP integration</h2>
-<p class="is">Resolving the date format issue this week to unlock clean ad spend data — so we can finally see what we're spending, where it's going, and whether it's driving the trials we need.</p>
-<div class="cg">
-<div class="cc"><div class="cl">What we're solving for</div><div class="cb"><ul><li>SFTP connection: date format issue in progress</li><li>Spend by channel: search, social, display</li><li>Spend by placement and ad type</li><li>Attribution: which ads generate which trials</li></ul></div></div>
-<div class="cc"><div class="cl">Questions we'll finally answer</div><div class="cb"><ul><li>What's the cost per trial by source?</li><li>Which placements drive highest-value leads?</li><li>Are we over-indexed on any single channel?</li><li>What's the game plan for Q3 spend?</li></ul></div></div>
-<div class="cc"><div class="cl">Current status</div><div class="cb">SFTP connection in progress. Date field formatting is the current blocker — being resolved this week. Once clean, connects to Looker → Google Sheets → Airtable, putting ad spend in context alongside every other channel metric.</div></div>
-<div class="cc"><div class="cl">Why it matters</div><div class="cb">Without ad spend data, cost-per-trial analysis is incomplete. <a href="https://www.emarketer.com/content/abm-first-party-data" target="_blank" class="cite">First-party data combined with paid media delivers 2.5x better ABM targeting efficiency.</a> Monks data is the final piece of the attribution story.</div></div>
+  <span class="i-badge">Priority 5 · this week</span>
+  <h2 class="i-title">Monks SFTP integration</h2>
+  <p class="i-sub">Resolving the date format issue this week to unlock clean ad spend data — so we can see what we're spending, where it's going, and whether it's driving the trials we need.</p>
+  <div class="cards-2">
+    <div class="card"><div class="card-label">What we're solving for</div><div class="card-body"><ul><li>SFTP connection — date format fix in progress</li><li>Spend by channel: search, social, display</li><li>Spend by placement and ad type</li><li>Attribution: which ads generate which trials</li><li>Budget planning coordination with Gina</li></ul></div></div>
+    <div class="card"><div class="card-label">Questions we'll finally answer</div><div class="card-body"><ul><li>What's the cost per trial by source?</li><li>Which placements drive highest-value leads?</li><li>Are we over-indexed on any single channel?</li><li>What's the Q3 spend game plan?</li></ul></div></div>
+    <div class="card"><div class="card-label">Current status</div><div class="card-body">Date field formatting is the blocker — being resolved this week. Once clean, connects to Looker → Google Sheets → Airtable, putting ad spend in context alongside every other channel metric. Gina partnership on budget planning begins once data is flowing.</div></div>
+    <div class="card"><div class="card-label">Why it matters</div><div class="card-body">Without ad spend data, cost-per-trial analysis is incomplete. <a href="https://www.emarketer.com/content/abm-first-party-data" target="_blank" class="cite">First-party data + paid media delivers 2.5× better ABM targeting efficiency.</a> Monks data is the final piece of the attribution story.</div></div>
+  </div>
+  <div class="cards-3">
+    <div class="card"><div class="card-label">Next steps</div><textarea class="ff" id="monks-1" placeholder="e.g. resolve date format, validate first pull, connect to Looker..."></textarea></div>
+    <div class="card"><div class="card-label">Open questions</div><textarea class="ff" id="monks-2" placeholder="e.g. ETA on fix? Gina meeting? Which channels?"></textarea></div>
+    <div class="card"><div class="card-label">Timeline</div><textarea class="ff" id="monks-3" placeholder="Date format fix: this week. Full connection: TBD."></textarea></div>
+  </div>
 </div>
-<div class="fg">
-<div class="fc"><div class="cl">Next steps</div><textarea class="ff" id="monks-1" placeholder="e.g. resolve date format this week, validate first pull, connect to Looker..."></textarea></div>
-<div class="fc"><div class="cl">Open questions</div><textarea class="ff" id="monks-2" placeholder="e.g. ETA on fix? Which channels does Monks manage?"></textarea></div>
-<div class="fc"><div class="cl">Timeline</div><textarea class="ff" id="monks-3" placeholder="Date format fix: this week. Full connection: TBD."></textarea></div>
-</div>
-<div class="cc"><div class="cl">Expected outcome</div><div class="cb">Full spend visibility across every paid channel, connected to trial outcomes. When leadership asks "what are we spending on ads?" the answer is a live number with context and attribution — not a spreadsheet request.</div></div>
+
+<!-- P6: BIG IDEAS -->
+<div class="ip" id="ip-big">
+  <span class="i-badge">Priority 6 · forward-looking</span>
+  <h2 class="i-title">Big Ideas</h2>
+  <p class="i-sub" style="margin-bottom:2rem">These aren't hypotheticals waiting for a budget. They're the natural extensions of the infrastructure we're already building — ideas with signal, with data, and with a clear first step. Some are ready to prototype now. All of them are on the map.</p>
+
+  <div class="big-bucket">
+    <div class="big-bucket-hd">
+      <span class="big-bucket-icon">🎯</span>
+      <span class="big-bucket-label">Turn intent into a trial</span>
+      <span class="big-bucket-sub">The moment someone raises their hand, we should be ready to catch them.</span>
+    </div>
+    <div class="cards-3">
+      <div class="big-idea-card">
+        <div class="big-idea-name">The "Cut 13 Hours" Welcome</div>
+        <div class="big-idea-body">A smart website prompt — what's the hardest part of your process? How many campaigns, how many contacts? Drop your email and see your personalized recommendation — and then, naturally, start a trial. By the time sales talks to them, they already know the product solves their problem. That's not a cold lead. That's a conversation that's already started.</div>
+        <div class="big-idea-signal">→ Data needed: pre-trial drop-off, pain point categories, sales handoff conversion rate</div>
+      </div>
+      <div class="big-idea-card">
+        <div class="big-idea-name">Webinars That Become Trials</div>
+        <div class="big-idea-body">The AI Lab webinar drove the most trials, the only conversions, and the highest-quality demos of anything we've run. The formula: participants need a live trial to follow along. We solve real business problems on screen. The webinar is the trial. The trial is the sale. Industry-specific editions. Competitor migration sessions. Feature deep dives with live automation builds.</div>
+        <div class="big-idea-signal">→ Signal: AI Lab data confirms the model · next step: quarterly webinar calendar</div>
+      </div>
+      <div class="big-idea-card">
+        <div class="big-idea-name">Activation Nudges — the Right Push at the Right Moment</div>
+        <div class="big-idea-body">Trial users who invite a teammate or hit a key milestone convert at dramatically higher rates. Three activation milestones. Automated nudges timed to behavior. Connects directly to the MQL scoring work Nick is building — and creates a conversion engine that compounds every week it runs.</div>
+        <div class="big-idea-signal">→ Source: 3.1× activation lift (ProductLed) · MQL scoring foundation already in build</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="big-bucket">
+    <div class="big-bucket-hd">
+      <span class="big-bucket-icon">🌍</span>
+      <span class="big-bucket-label">Meet them in their moment</span>
+      <span class="big-bucket-sub">The right message finds people. A great message finds them at exactly the right time.</span>
+    </div>
+    <div class="cards-3">
+      <div class="big-idea-card">
+        <div class="big-idea-name">The Cultural Calendar Play</div>
+        <div class="big-idea-body">Fashion Week in Milan. Carnival in Brazil. Golden Week in Japan. Diwali business season in India. These are the moments when mid-market businesses are actively investing in growth tools — and we should be there with a message that says we see them. Localized campaigns tied to real cultural moments outperform generic sends significantly.</div>
+        <div class="big-idea-signal">→ Data needed: top-12 country performance by month · cultural calendar · vertical by country</div>
+      </div>
+      <div class="big-idea-card">
+        <div class="big-idea-name">Same Tool, Different Story</div>
+        <div class="big-idea-body">A healthcare practice and a fashion retailer use AC completely differently. Vertical-specific messaging — lifecycle emails, ad copy, landing pages — is the highest-leverage, lowest-cost multiplier available right now. We don't build new product. We tell the right story to the right buyer at the right moment. And it feeds directly into the 3.1× behavioral activation number.</div>
+        <div class="big-idea-signal">→ Data needed: trial data by industry · conversion rate by vertical · messaging baseline</div>
+      </div>
+      <div class="big-idea-card">
+        <div class="big-idea-name">A Social Presence Worth Having</div>
+        <div class="big-idea-body">YouTube for the power user who wants to see AC in action before they buy. Instagram for the mid-market owner who decides with their eyes. TikTok for the SMB decision-maker under 40 who learns in 60 seconds. AC is a product people love once they understand it — social closes the discovery gap. We need a plan, not just a presence.</div>
+        <div class="big-idea-signal">→ Data needed: current social traffic contribution · competitor social audit · platform benchmarks</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="big-bucket">
+    <div class="big-bucket-hd">
+      <span class="big-bucket-icon">🚪</span>
+      <span class="big-bucket-label">The great migration</span>
+      <span class="big-bucket-sub">They've already decided to leave. We're just making sure they land here.</span>
+    </div>
+    <div class="cards-2">
+      <div class="big-idea-card">
+        <div class="big-idea-name">The Easy Button — Frictionless Migration at Scale</div>
+        <div class="big-idea-body">People leaving Mailchimp have already made the hard decision. They just haven't chosen where yet. A dedicated switcher track — landing page, guided migration, onboarding sequence built around the pain points they're leaving behind — captures the highest-intent prospects in the funnel. Built once for Mailchimp. Replicated for HubSpot, Brevo, RD Station. The process is the product.</div>
+        <div class="big-idea-signal">→ Signal: 3:1 Mailchimp former-to-current ratio · −17.8% active domain decline confirmed</div>
+      </div>
+      <div class="big-idea-card">
+        <div class="big-idea-name">We Remember You — The Win-Back Story</div>
+        <div class="big-idea-body">People who trialed and went cold are not gone. They're the most qualified audience we have that we're not talking to. A win-back sequence that starts with our story: how AC was founded, what problem it was built to solve. Personalized by what we already know about them. Then: what didn't we give you? Water and Sun are the news worth coming back for.</div>
+        <div class="big-idea-signal">→ Source: 39% open rate on cold trial nurture (AC internal) · lifecycle audit with Shauna recommended</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="big-bucket">
+    <div class="big-bucket-hd">
+      <span class="big-bucket-icon">📡</span>
+      <span class="big-bucket-label">The intelligence layer</span>
+      <span class="big-bucket-sub">When the right information reaches the right person automatically, everything moves faster.</span>
+    </div>
+    <div class="cards-2">
+      <div class="big-idea-card">
+        <div class="big-idea-name">Everyone Gets Their Own Digest</div>
+        <div class="big-idea-body">Rachel's digest: full org overview and key signals, weekly. Nick + Alicia: analytical reporting depth. Benyamin: all initiative updates with bite-size summaries. Marissa: project progress at a high level. Each one automated from Airtable — not a new meeting, a customized output from infrastructure we're already building. The right information to the right person, automatically. No more ad-hoc requests that pull people out of deep work.</div>
+        <div class="big-idea-signal">→ Foundation: Airtable integration (P3) · timeline: ready to prototype in Q3</div>
+      </div>
+      <div class="big-idea-card" style="background:#FFFDF7;border-color:#F5E4C0">
+        <div class="big-idea-name" style="color:#633806">Why this bucket matters most</div>
+        <div class="big-idea-body" style="color:#7A4A1A">The intelligence layer isn't the flashiest idea in this section — but it's the one that makes every other idea sustainable. When each person automatically receives exactly what they need to make their next decision, we stop spending time on information management and start spending it on outcomes. This is what Sun is built for. And this is the infrastructure we're laying the foundation for right now.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cards-3">
+    <div class="card"><div class="card-label">What to prototype first</div><textarea class="ff" id="big-1" placeholder="e.g. next webinar format, Airtable digest pilot, easy button page..."></textarea></div>
+    <div class="card"><div class="card-label">Open questions</div><textarea class="ff" id="big-2" placeholder="e.g. Webinar production resources? Sales alignment?"></textarea></div>
+    <div class="card"><div class="card-label">Q3 / Q4 roadmap</div><textarea class="ff" id="big-3" placeholder="What goes on the roadmap vs. what do we prototype now?"></textarea></div>
+  </div>
 </div>
 
 <hr class="div">
+
+<!-- TEAM -->
 <div class="sh">The team behind this</div>
-<div class="tgrid">
-<div class="tc"><div class="av ab">RG</div><div class="tn">Rachel Garcia</div><div class="tt">VP, Revenue &amp; Performance Marketing</div><div class="td">Steering the revenue vision and OKR alignment. Holds the WIG.</div></div>
-<div class="tc"><div class="av ap">NM</div><div class="tn">Nicholas McClanahan</div><div class="tt">Dir., Marketing Analytics &amp; Operations</div><div class="td">Data integrity, Looker, and MQL scoring. Makes every number trustworthy and decision-ready.</div></div>
-<div class="tc"><div class="av at">MP</div><div class="tn">Marissa Price + Mia</div><div class="tt">Dir., Marketing Strategy &amp; Planning</div><div class="td">With Mia, owns process architecture and execution cadence across all five initiatives.</div></div>
-<div class="tc"><div class="av ac">BE</div><div class="tn">Benjamin Elias</div><div class="tt">Senior Dir., Growth Marketing</div><div class="td">Campaign execution and demand generation. Connects every motion to the revenue story.</div></div>
+<div class="team-grid">
+  <div class="team-card"><div class="avatar av-blue">RG</div><div class="team-name">Rachel Garcia</div><div class="team-title">VP, Revenue &amp; Performance Marketing</div><div class="team-note">Steering the revenue vision and OKR alignment. Holds the WIG and the room.</div></div>
+  <div class="team-card"><div class="avatar av-purple">NM</div><div class="team-name">Nick McClanahan</div><div class="team-title">Dir., Marketing Analytics &amp; Operations</div><div class="team-note">Data integrity, Looker, and MQL scoring. Makes every number trustworthy and decision-ready.</div></div>
+  <div class="team-card"><div class="avatar av-teal">MP</div><div class="team-name">Marissa Price</div><div class="team-title">Dir., Marketing Strategy &amp; Planning</div><div class="team-note">Organizes initiatives through motion project management. Owns process architecture and execution cadence.</div></div>
+  <div class="team-card"><div class="avatar av-coral">BE</div><div class="team-name">Benyamin Elias</div><div class="team-title">Senior Dir., Growth Marketing</div><div class="team-note">Project oversight across growth and demand generation. Connects every motion to the revenue story.</div></div>
+</div>
+
+<!-- WEEKLY RHYTHM -->
+<div class="rhythm-section">
+  <div class="rhythm-label">The weekly operating rhythm — Monday through Friday</div>
+  <div class="week-grid">
+    <div class="day-card">
+      <div class="day-name">Monday</div>
+      <div class="day-focus">Pull, validate, and review</div>
+      <ul class="day-tasks">
+        <li>ELT data pull w/ Nick's Claude project</li>
+        <li>Validate all sources, flag anomalies</li>
+        <li>Week-over-week movement scan</li>
+        <li>Top 12 countries quick review</li>
+      </ul>
+      <span class="day-pill dp-amber">Dual reporting due</span>
+    </div>
+    <div class="day-card">
+      <div class="day-name">Tuesday</div>
+      <div class="day-focus">What moved and why</div>
+      <ul class="day-tasks">
+        <li>Deep dive into ups and downs</li>
+        <li>Pull Airtable campaign context</li>
+        <li>Cross-reference with initiative activity</li>
+        <li>Draft preliminary narrative</li>
+      </ul>
+      <span class="day-pill dp-gray">Analysis day</span>
+    </div>
+    <div class="day-card">
+      <div class="day-name">Wednesday</div>
+      <div class="day-focus">Build the story + team review</div>
+      <ul class="day-tasks">
+        <li>Organize and deepen the narrative</li>
+        <li>Tie data to business context + OKRs</li>
+        <li>Office hours: all projects + standardization</li>
+        <li>Build presentation structure</li>
+      </ul>
+      <span class="day-pill dp-amber">Office hours</span>
+    </div>
+    <div class="day-card">
+      <div class="day-name">Thursday</div>
+      <div class="day-focus">Polish and present</div>
+      <ul class="day-tasks">
+        <li>Early: final presentation tweaks</li>
+        <li>Rachel to present to the ELT team</li>
+        <li>Afternoon: all projects + side tickets</li>
+        <li>Campaign builds, scoring, requests</li>
+      </ul>
+      <span class="day-pill dp-amber">ELT day</span>
+    </div>
+    <div class="day-card">
+      <div class="day-name">Friday</div>
+      <div class="day-focus">Look ahead</div>
+      <ul class="day-tasks">
+        <li>Review what the week surfaced</li>
+        <li>Plan next week's focus areas</li>
+        <li>Update Airtable initiative progress</li>
+        <li>Prep Monday pull infrastructure</li>
+      </ul>
+      <span class="day-pill dp-gray">Forward planning</span>
+    </div>
+  </div>
 </div>
 
 <hr class="div">
-<div class="sh">Eight bold recommendations — outcomes first, data required</div>
-<div class="save-bar">
-<button class="export-btn" onclick="exportNotes()">Export all notes ↗</button>
-<span class="save-ind" id="save-ind">Notes save automatically in this browser</span>
-</div>
-<div class="rg">
-<div class="rc"><div class="rn">01</div><div class="rt">Website prompt box — capture leads before they decide</div><div class="rb">Add an interactive prompt to the AC website: "What do you want to automate?" Get their website URL. Ask 2 qualifying questions (business type, contact count). Then ask for email — after they're invested. Even if they don't start a trial, we have them. Measure incomplete trial starts as a campaign funnel stage. Build nurture sequences around that. This is a category-defining lead capture improvement and a massive missed opportunity right now.</div><div class="rd"><div class="rd-lbl">Data needed</div>Current trial abandonment rate · email capture rate pre-trial · incomplete trial volume · nurture campaign performance on partial signups</div></div>
-<div class="rc"><div class="rn">02</div><div class="rt">Dynamic testing framework — know before you scale</div><div class="rb">Before scaling any channel, message, or campaign, establish a structured A/B testing program. Headlines, subject lines, CTAs, onboarding steps, ad creatives — everything should have a winning version before it gets budget. The companies winning right now aren't guessing. They're testing systematically and moving fast on what works.</div><div class="rd"><div class="rd-lbl">Data needed</div>Baseline conversion rates by channel · test infrastructure audit · statistical significance thresholds · 8-week testing calendar</div></div>
-<div class="rc"><div class="rn">03</div><div class="rt">Social media strategy — what does this actually look like?</div><div class="rb">YouTube tutorials for power users who want to see AC in action before they buy. Instagram for mid-market owners who decide with their eyes. TikTok for SMB decision-makers under 40 who learn in 60 seconds. AC is a product people love once they understand it — social closes the discovery gap. <a href="https://business.linkedin.com/marketing-solutions/blog/b2b-content-marketing" target="_blank" class="cite">73% of B2B marketers call social media effective for their business.</a> We need a plan, not just a presence.</div><div class="rd"><div class="rd-lbl">Data needed</div>Current social traffic contribution (ELT pull) · competitor social audit · platform engagement benchmarks · content production resource plan</div></div>
-<div class="rc"><div class="rn">04</div><div class="rt">Country-specific seasonal campaigns — meet them in their moment</div><div class="rb">Fashion Week in Milan and New York. Carnival in Brazil. Golden Week in Japan. Diwali business season in India. These are the moments when mid-sophisticated businesses are actively investing in tools and growth. We should be there with localized messaging and cultural intelligence that says we see them. <a href="https://www.campaignmonitor.com/resources/guides/email-marketing-benchmarks/" target="_blank" class="cite">Localized campaigns: +29% open rates, +41% click rates.</a></div><div class="rd"><div class="rd-lbl">Data needed</div>Top-12 country performance by month · industry vertical by country · cultural calendar research · localization capability audit</div></div>
-<div class="rc"><div class="rn">05</div><div class="rt">Industry vertical targeting — same tool, different stories</div><div class="rb">Healthcare, fintech, and retail are the fastest-growing SaaS verticals. A healthcare practice uses AC completely differently than a fashion retailer. Dynamic messaging by vertical — lifecycle emails, ad copy, landing pages — is the highest-leverage, lowest-cost multiplier available to us right now. We're not building new product. We're telling the right story to the right buyer at the right moment.</div><div class="rd"><div class="rd-lbl">Data needed</div>Trial data by industry from intake form · conversion rate by vertical · vertical-specific messaging baseline · SaaS penetration benchmarks by sector</div></div>
-<div class="rc"><div class="rn">06</div><div class="rt">Behavioral activation scoring — conversion without headcount</div><div class="rb">Trial users who invite a teammate or complete a key onboarding action convert at dramatically higher rates. Defining 3 activation milestones and building automated nudges around them turns the existing trial base into a conversion engine that runs on its own. <a href="https://www.productled.org/blog/activation-metrics" target="_blank" class="cite">Behavior-triggered sequences activate 3.1x more users to "aha moment" milestones</a> vs. static email drip.</div><div class="rd"><div class="rd-lbl">Data needed</div>Product usage mapped to trial-to-paid conversion · onboarding completion rates by step · 30/60/90-day retention by activation action</div></div>
-<div class="rc"><div class="rn">07</div><div class="rt">First-party data moat — we already have what others pay for</div><div class="rb">Our intake form answers — company size, contact count, switching from, experience level — are a competitive intelligence asset most SaaS companies spend years collecting. With third-party cookies gone, this signal is our edge. Using it to personalize trial onboarding by segment doesn't require new technology. It requires using what we already have.</div><div class="rd"><div class="rd-lbl">Data needed</div>Intake form responses mapped to conversion · personalized vs. generic onboarding A/B test design · lifecycle team coordination plan</div></div>
-<div class="rc"><div class="rn">08</div><div class="rt">Switcher conversion playbook — they've already decided to leave</div><div class="rb">People leaving Mailchimp and HubSpot have already made the hard decision. They just haven't chosen where yet. A dedicated switcher track — landing page, migration support, onboarding sequence built around their specific pain points — captures the highest-intent prospects in the entire funnel. Build once for Mailchimp. Replicate for every competitor. The template is already in flight.</div><div class="rd"><div class="rd-lbl">Data needed</div>Current switcher conversion rate (ELT pull) · days-to-conversion for switchers vs. organic · competitor migration pain point research · lifecycle team capacity</div></div>
+
+<!-- 4DX — BOTTOM CAPSTONE -->
+<div class="fdx-eyebrow">Strategic recommendation — how we execute all of it</div>
+<div class="fdx-bottom">
+  <div class="fdx-title">Slow down to speed up — the operating model that makes it stick</div>
+  <div class="fdx-body">Last week we put a name to something we'd all been feeling: the cost of running fast without a shared system. 4DX isn't a new methodology we're adopting — it's the structure that turns what we already agreed on into something we can actually measure and hold together. We've seen six projects and nine ideas on the horizon. The question isn't whether we can do it. It's how we make sure we actually do it together, consistently, over one quarter. That's all it takes to build this rhythm. <a href="https://hbr.org/2019/07/the-4-disciplines-of-execution" target="_blank" class="cite">Teams using 4DX achieve their goals 2–3× more often than those without a shared operating model.</a></div>
+  <div class="fdx-pillars">
+    <div class="fdx-pillar"><div class="fdx-pillar-label">Wildly Important Goal</div><div class="fdx-pillar-val">Grow high-MQL leads that convert into trials — one north star, owned collectively.</div></div>
+    <div class="fdx-pillar"><div class="fdx-pillar-label">Lead Measures</div><div class="fdx-pillar-val">2–3 predictive, controllable actions per team. Built into Airtable. Tracked weekly.</div></div>
+    <div class="fdx-pillar"><div class="fdx-pillar-label">Scoreboard</div><div class="fdx-pillar-val">This document + Airtable + ELT brief. Everyone sees the same data, always.</div></div>
+    <div class="fdx-pillar"><div class="fdx-pillar-label">Cadence</div><div class="fdx-pillar-val">Wednesday office hours — 15 minutes. Not a meeting. A rhythm. A commitment.</div></div>
+  </div>
+  <div class="fdx-steps-label">How we make this real — one quarter, six steps</div>
+  <div class="fdx-steps">
+    <div class="fdx-step"><div class="fdx-step-num">01</div><div class="fdx-step-title">Team process audit</div><div class="fdx-step-body">Each team maps their current workflow — inputs, outputs, tools, handoffs. Alicia coordinates. 2 weeks.</div></div>
+    <div class="fdx-step"><div class="fdx-step-num">02</div><div class="fdx-step-title">WIG working session</div><div class="fdx-step-body">All stakeholders align on the Wildly Important Goal together. We set the number, we own it collectively.</div></div>
+    <div class="fdx-step"><div class="fdx-step-num">03</div><div class="fdx-step-title">Define lead measures</div><div class="fdx-step-body">2–3 predictive, influenceable actions per team that move the WIG. Built into Airtable as trackable tasks.</div></div>
+    <div class="fdx-step"><div class="fdx-step-num">04</div><div class="fdx-step-title">Build the scoreboard</div><div class="fdx-step-body">Airtable + Looker become the single shared scoreboard. Everyone sees the same data in near real time.</div></div>
+    <div class="fdx-step"><div class="fdx-step-num">05</div><div class="fdx-step-title">Launch the cadence</div><div class="fdx-step-body">Wednesday office hours begins. 15-minute pulse check per project. Not a meeting. A rhythm.</div></div>
+    <div class="fdx-step"><div class="fdx-step-num">06</div><div class="fdx-step-title">First retrospective</div><div class="fdx-step-body">At 30 days: what's working, what isn't, what changes. Iterate every 30 days and keep going.</div></div>
+  </div>
+  <div class="fdx-team-note">Rachel holds the WIG · Alicia + Nick build and maintain the scoreboard · Marissa organizes initiatives through motion project management · Benyamin Elias leads project oversight · every Wednesday we give a quick update on the status of moving us forward together.</div>
 </div>
 
 <hr class="div">
-<div class="sh">Estimated impact — directional numbers, real methodology</div>
-<p style="font-size:12.5px;color:#888;line-height:1.7;margin-bottom:1.1rem">These are directional estimates based on published SaaS benchmarks and documented research — not internal projections. They represent what becomes possible when the five initiatives are executed together. Actual impact will be validated through the ELT reporting infrastructure as we build it.</p>
-<div class="impact-grid">
-<div class="imp"><div class="imp-n">+20–28%</div><div class="imp-t">Trial-to-paid conversion improvement</div><div class="imp-b">Automated behavioral nurture sequences improve trial conversion by this range. We currently have a meaningful pool of trial users not hitting activation. Behavior-triggered onboarding closes that gap — and does it without adding headcount.</div><div class="imp-src">Source: SaaS Trial Conversion Automation ROI 2026 · behavior-triggered vs. static drip comparison</div></div>
-<div class="imp"><div class="imp-n">85.3%</div><div class="imp-t">Current trial abandonment — our biggest opportunity</div><div class="imp-b">85.3% of trial starts are abandoned before completion. 40–60% of accounts never complete initial setup. Abandoned trial nurture emails achieve 39% open rates and 23% click-through. This is an untapped conversion funnel sitting inside our existing data right now.</div><div class="imp-src">Source: SaaS Conversion Rate Benchmarks 2026, 10,000+ SaaS company analysis · 1capture.io</div></div>
-<div class="imp"><div class="imp-n">3.1×</div><div class="imp-t">Activation lift from behavior-triggered sequences</div><div class="imp-b">Behavior-triggered onboarding sequences activate 3.1x more trial users to key milestones vs. static drip campaigns. Activation is the conversion lever. Getting users to their first real win inside AC is what separates a trial from a customer for life.</div><div class="imp-src">Source: SaaS Trial Conversion Automation ROI 2026 · behavioral vs. static onboarding comparison</div></div>
-<div class="imp"><div class="imp-n">~40 hrs</div><div class="imp-t">Weekly hours reclaimed through reporting automation</div><div class="imp-b">The current ELT process required 60 hours/week across two contractors. With Looker → Airtable automation and structured templates, the same output requires an estimated 15–20 hours — reclaiming 40+ hours/week for campaign work, scoring, and growth initiatives.</div><div class="imp-src">Based on documented contractor hours (60/wk) and industry automation efficiency benchmarks for reporting workflows</div></div>
-</div>
 
-<hr class="div">
-<div class="sh">The weekly operating rhythm — Monday through Friday</div>
-<div class="week-grid">
-<div class="day"><div class="day-name">Monday</div><div class="day-focus">Pull, validate, and review</div><ul class="day-tasks"><li>9–11am: ELT data pull with Nicholas's Claude project</li><li>Validate all sources, flag anomalies</li><li>Identify week-over-week movements</li><li>Quick scan of top 12 countries</li></ul><span class="day-block db-amber">9–11am blocked</span></div>
-<div class="day"><div class="day-name">Tuesday</div><div class="day-focus">Double-tap: what moved and why</div><ul class="day-tasks"><li>Deep dive into ups and downs</li><li>Alicia pulls Airtable campaign context</li><li>Cross-reference data with initiative activity</li><li>Draft preliminary narrative</li></ul><span class="day-block db-gray">Analysis day</span></div>
-<div class="day"><div class="day-name">Wednesday</div><div class="day-focus">Build the story</div><ul class="day-tasks"><li>Organize and deepen the narrative</li><li>Tie data to business context and OKRs</li><li>Add recommendations where data allows</li><li>Build presentation structure</li></ul><span class="day-block db-gray">Story building</span></div>
-<div class="day"><div class="day-name">Thursday</div><div class="day-focus">Polish, present, and build</div><ul class="day-tasks"><li>Early: final ELT presentation tweaks</li><li>Present to Rachel and ELT team</li><li>Afternoon: all projects and side tickets</li><li>Campaign builds, scoring work, requests</li></ul><span class="day-block db-amber">Full day blocked</span></div>
-<div class="day"><div class="day-name">Friday</div><div class="day-focus">Look ahead</div><ul class="day-tasks"><li>Review what the week surfaced</li><li>Plan next week's focus areas</li><li>Update Airtable initiative progress</li><li>Prep Monday pull infrastructure</li></ul><span class="day-block db-gray">Forward planning</span></div>
-</div>
-<div class="load-note">Beyond the ELT cycle: Alicia is simultaneously managing the Airtable integration build, onboarding score analysis and adjustment, Monks SFTP coordination, campaign performance reporting for Benjamin's team, email and SMS onboarding flow optimization, and cross-functional ad hoc requests throughout the week. Thursday's full-day block exists because it's the only way to serve both the ELT presentation and everything else. This is one person running the equivalent of a full revenue operations function — and running it well.</div>
-
-<hr class="div">
-<div class="alicia-card">
-<div class="alicia-inner">
-<div class="alicia-av">AM</div>
-<div>
-<div class="alicia-name">Alicia Martin</div>
-<div class="alicia-role">Revenue Marketing Analyst · ActiveCampaign</div>
-<div class="alicia-text">The strategy in this document draws on experience building customer engagement and revenue intelligence systems at Twilio — where the lesson was clear: the gap between a reactive marketing team and a predictive one is never the data you have. It's whether you've built the framework that uses it. Every recommendation here is designed to be executed, not just presented. The goal is to walk out of Thursday's meeting with decisions made, timelines agreed, and a team that knows exactly where we're going together.<br><br><a href="https://www.linkedin.com/in/alicia-martin-tx/" target="_blank" class="alicia-li">linkedin.com/in/alicia-martin-tx ↗</a></div>
-</div>
-</div>
+<!-- ALICIA CARD -->
+<div class="alicia-wrap">
+  <div class="alicia-row">
+    <div class="alicia-av">AM</div>
+    <div style="flex:1">
+      <div class="alicia-name">Alicia Martin</div>
+      <div class="alicia-role">Revenue Marketing Analyst · ActiveCampaign</div>
+      <div class="alicia-body">
+        I've spent my career learning how to make complicated things make sense — and honestly, I just really love doing it.<br><br>
+        At Twilio I sat with clients inside their systems — not to audit them, but to actually understand how everything fit together. Where the naming conventions had gotten tangled. What each team was asking for versus what they were actually getting. I'd help untangle it, build the reporting that made sense for the people reading it, map out where to test and where to invest, and hand over something that felt like a plan, not just a presentation.<br><br>
+        Before that, at Targetbase, I was deep inside the data itself — learning how information flows from a CRM through intake and formatting all the way to the moment it becomes a story someone can act on. Data dictionaries, campaign displays, project management, order of operations. I learned that how data is organized at the beginning shapes every decision that comes after.<br><br>
+        I bring both of those things here. My goal isn't to make things feel complicated — it's to do the complicated work so that when we're in the room together, everything feels simple and obvious and possible. That's the job. That's what I'm here for.
+      </div>
+      <div class="weeks-row">
+        <div class="week-pill"><div class="week-pill-n">Week 1</div><div class="week-pill-v">Airtable</div></div>
+        <div class="week-pill"><div class="week-pill-n">Week 2</div><div class="week-pill-v">ELT</div></div>
+        <div class="week-pill"><div class="week-pill-n">Week 3</div><div class="week-pill-v">Claude</div></div>
+        <div class="week-pill"><div class="week-pill-n">Week 4</div><div class="week-pill-v">Flex</div></div>
+      </div>
+      <a href="https://www.linkedin.com/in/alicia-martin-tx/" target="_blank" class="alicia-link">📝 Read notes the team left me ↗</a>
+    </div>
+  </div>
 </div>
 
 <div class="foot">Revenue Marketing Intelligence · ActiveCampaign · Q2 2026 · <em>Built to grow together.</em></div>
-
 </div>
+
 <script>
 function st(id){
   document.querySelectorAll('.ip').forEach(p=>p.classList.remove('on'));
   document.querySelectorAll('.tb').forEach(b=>b.classList.remove('on'));
   document.querySelectorAll('.pc').forEach(c=>c.classList.remove('on'));
-  var p=document.getElementById('ip-'+id);if(p)p.classList.add('on');
-  document.querySelectorAll('.tb').forEach(b=>{if(b.getAttribute('onclick')&&b.getAttribute('onclick').includes("'"+id+"'"))b.classList.add('on')});
-  var pc=document.getElementById('pc-'+id);if(pc)pc.classList.add('on');
+  var p=document.getElementById('ip-'+id);
+  if(p)p.classList.add('on');
+  document.querySelectorAll('.tb').forEach(b=>{
+    if(b.getAttribute('onclick')&&b.getAttribute('onclick').includes("'"+id+"'"))b.classList.add('on');
+  });
+  var pc=document.getElementById('pc-'+id);
+  if(pc)pc.classList.add('on');
+  var tabs=document.querySelector('.tabs');
+  if(tabs)window.scrollTo({top:tabs.offsetTop-24,behavior:'smooth'});
 }
 var saveTimer;
 function saveAll(){
   document.querySelectorAll('textarea[id]').forEach(ta=>{
-    localStorage.setItem('ac2026_'+ta.id,ta.value);
+    try{localStorage.setItem('ac2026_'+ta.id,ta.value);}catch(e){}
     ta.classList.toggle('has-content',ta.value.trim().length>0);
   });
-  var ind=document.getElementById('save-ind');
-  if(ind)ind.textContent='Saved at '+new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
+  var s=document.getElementById('save-status');
+  if(s)s.textContent='Saved '+new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
 }
 window.addEventListener('DOMContentLoaded',function(){
   document.querySelectorAll('textarea[id]').forEach(ta=>{
-    var v=localStorage.getItem('ac2026_'+ta.id);
-    if(v&&v.trim()){ta.value=v;ta.classList.add('has-content');}
+    try{var v=localStorage.getItem('ac2026_'+ta.id);if(v&&v.trim()){ta.value=v;ta.classList.add('has-content');}}catch(e){}
     ta.addEventListener('input',function(){clearTimeout(saveTimer);saveTimer=setTimeout(saveAll,800);});
   });
 });
+// ── Paste your Google Apps Script Web App URL here ──────────
+var SHEETS_URL = '';
+// ────────────────────────────────────────────────────────────
+
 function exportNotes(){
-  var out='REVENUE MARKETING INTELLIGENCE — NOTES\nActiveCampaign Q2 2026\nExported: '+new Date().toLocaleString()+'\n\n';
-  var s={elt:'ELT Reporting',camp:'Campaign Performance',air:'Airtable',score:'Scoring',monks:'Monks SFTP'};
-  var l=['Next steps','Open questions','Timeline'];
+  var sectionMap={elt:'ELT Reporting',camp:'Mailchimp Switcher',air:'Airtable',score:'Scoring',monks:'Monks SFTP',big:'Big Ideas'};
+  var sections=[];
   var any=false;
-  Object.keys(s).forEach(k=>{
-    var sec='=== '+s[k]+' ===\n';
-    l.forEach(function(lb,i){var ta=document.getElementById(k+'-'+(i+1));if(ta&&ta.value.trim()){sec+=lb+':\n'+ta.value.trim()+'\n\n';any=true;}});
-    out+=sec;
+  Object.keys(sectionMap).forEach(function(k){
+    var ns=document.getElementById(k+'-1');
+    var oq=document.getElementById(k+'-2');
+    var tl=document.getElementById(k+'-3');
+    var s={name:sectionMap[k],nextSteps:ns?ns.value.trim():'',openQuestions:oq?oq.value.trim():'',timeline:tl?tl.value.trim():''};
+    if(s.nextSteps||s.openQuestions||s.timeline)any=true;
+    sections.push(s);
   });
-  if(!any)out+='(No notes entered yet)\n';
-  var b=new Blob([out],{type:'text/plain'});
-  var a=document.createElement('a');a.href=URL.createObjectURL(b);
-  a.download='ac-notes-'+new Date().toISOString().split('T')[0]+'.txt';
-  document.body.appendChild(a);a.click();document.body.removeChild(a);
+
+  if(!any){alert('No notes yet — add some notes in the tabs first!');return;}
+
+  // If a Sheets URL is configured, send there; otherwise download as .txt
+  if(SHEETS_URL && SHEETS_URL.trim().length > 10){
+    var btn=document.querySelector('.export-btn');
+    var orig=btn.textContent;
+    btn.textContent='Sending…';
+    btn.disabled=true;
+    fetch(SHEETS_URL,{method:'POST',body:JSON.stringify({submittedBy:'Alicia Martin',sections:sections}),headers:{'Content-Type':'application/json'}})
+      .then(function(r){return r.json();})
+      .then(function(d){
+        btn.textContent= d.status==='ok' ? '✓ Sent to Sheets' : '⚠ Error — check console';
+        setTimeout(function(){btn.textContent=orig;btn.disabled=false;},3000);
+      })
+      .catch(function(){
+        btn.textContent='⚠ Couldn\'t reach Sheets';
+        setTimeout(function(){btn.textContent=orig;btn.disabled=false;},3000);
+      });
+  } else {
+    // Fallback: download .txt
+    var out='REVENUE MARKETING INTELLIGENCE — NOTES\nActiveCampaign Q2 2026\nExported: '+new Date().toLocaleString()+'\n\n';
+    sections.forEach(function(s){
+      out+='=== '+s.name+' ===\n';
+      if(s.nextSteps)out+='Next steps:\n'+s.nextSteps+'\n\n';
+      if(s.openQuestions)out+='Open questions:\n'+s.openQuestions+'\n\n';
+      if(s.timeline)out+='Timeline:\n'+s.timeline+'\n\n';
+    });
+    var blob=new Blob([out],{type:'text/plain'});
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download='ac-revenue-notes-'+new Date().toISOString().split('T')[0]+'.txt';
+    document.body.appendChild(a);a.click();document.body.removeChild(a);
+  }
 }
 </script>
 </body>
